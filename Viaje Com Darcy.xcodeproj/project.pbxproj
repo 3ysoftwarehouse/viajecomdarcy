@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E674B1B1D1B79B2009716CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1A1D1B79B2009716CC /* AppDelegate.swift */; };
+		3E674B1D1D1B79B2009716CC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1C1D1B79B2009716CC /* RootViewController.swift */; };
+		3E674B1F1D1B79B2009716CC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1E1D1B79B2009716CC /* DataViewController.swift */; };
+		3E674B211D1B79B2009716CC /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B201D1B79B2009716CC /* ModelController.swift */; };
+		3E674B241D1B79B2009716CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E674B221D1B79B2009716CC /* Main.storyboard */; };
+		3E674B261D1B79B2009716CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E674B251D1B79B2009716CC /* Assets.xcassets */; };
+		3E674B291D1B79B2009716CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E674B271D1B79B2009716CC /* LaunchScreen.storyboard */; };
+		3E674B341D1B79B2009716CC /* Viaje_Com_DarcyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B331D1B79B2009716CC /* Viaje_Com_DarcyTests.swift */; };
+		3E674B3F1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B3E1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E674B301D1B79B2009716CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E674B0F1D1B79B2009716CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E674B161D1B79B2009716CC;
+			remoteInfo = "Viaje Com Darcy";
+		};
+		3E674B3B1D1B79B2009716CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E674B0F1D1B79B2009716CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E674B161D1B79B2009716CC;
+			remoteInfo = "Viaje Com Darcy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E674B171D1B79B2009716CC /* Viaje Com Darcy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viaje Com Darcy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E674B1A1D1B79B2009716CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E674B1C1D1B79B2009716CC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3E674B1E1D1B79B2009716CC /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		3E674B201D1B79B2009716CC /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		3E674B231D1B79B2009716CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E674B251D1B79B2009716CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E674B281D1B79B2009716CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E674B2A1D1B79B2009716CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E674B2F1D1B79B2009716CC /* Viaje Com DarcyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viaje Com DarcyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E674B331D1B79B2009716CC /* Viaje_Com_DarcyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viaje_Com_DarcyTests.swift; sourceTree = "<group>"; };
+		3E674B351D1B79B2009716CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E674B3A1D1B79B2009716CC /* Viaje Com DarcyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viaje Com DarcyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E674B3E1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viaje_Com_DarcyUITests.swift; sourceTree = "<group>"; };
+		3E674B401D1B79B3009716CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E674B141D1B79B2009716CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E674B2C1D1B79B2009716CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E674B371D1B79B2009716CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E674B0E1D1B79B2009716CC = {
+			isa = PBXGroup;
+			children = (
+				3E674B191D1B79B2009716CC /* Viaje Com Darcy */,
+				3E674B321D1B79B2009716CC /* Viaje Com DarcyTests */,
+				3E674B3D1D1B79B2009716CC /* Viaje Com DarcyUITests */,
+				3E674B181D1B79B2009716CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E674B181D1B79B2009716CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E674B171D1B79B2009716CC /* Viaje Com Darcy.app */,
+				3E674B2F1D1B79B2009716CC /* Viaje Com DarcyTests.xctest */,
+				3E674B3A1D1B79B2009716CC /* Viaje Com DarcyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E674B191D1B79B2009716CC /* Viaje Com Darcy */ = {
+			isa = PBXGroup;
+			children = (
+				3E674B1A1D1B79B2009716CC /* AppDelegate.swift */,
+				3E674B1C1D1B79B2009716CC /* RootViewController.swift */,
+				3E674B1E1D1B79B2009716CC /* DataViewController.swift */,
+				3E674B201D1B79B2009716CC /* ModelController.swift */,
+				3E674B221D1B79B2009716CC /* Main.storyboard */,
+				3E674B251D1B79B2009716CC /* Assets.xcassets */,
+				3E674B271D1B79B2009716CC /* LaunchScreen.storyboard */,
+				3E674B2A1D1B79B2009716CC /* Info.plist */,
+			);
+			path = "Viaje Com Darcy";
+			sourceTree = "<group>";
+		};
+		3E674B321D1B79B2009716CC /* Viaje Com DarcyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E674B331D1B79B2009716CC /* Viaje_Com_DarcyTests.swift */,
+				3E674B351D1B79B2009716CC /* Info.plist */,
+			);
+			path = "Viaje Com DarcyTests";
+			sourceTree = "<group>";
+		};
+		3E674B3D1D1B79B2009716CC /* Viaje Com DarcyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E674B3E1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift */,
+				3E674B401D1B79B3009716CC /* Info.plist */,
+			);
+			path = "Viaje Com DarcyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E674B161D1B79B2009716CC /* Viaje Com Darcy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E674B431D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com Darcy" */;
+			buildPhases = (
+				3E674B131D1B79B2009716CC /* Sources */,
+				3E674B141D1B79B2009716CC /* Frameworks */,
+				3E674B151D1B79B2009716CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viaje Com Darcy";
+			productName = "Viaje Com Darcy";
+			productReference = 3E674B171D1B79B2009716CC /* Viaje Com Darcy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E674B2E1D1B79B2009716CC /* Viaje Com DarcyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E674B461D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com DarcyTests" */;
+			buildPhases = (
+				3E674B2B1D1B79B2009716CC /* Sources */,
+				3E674B2C1D1B79B2009716CC /* Frameworks */,
+				3E674B2D1D1B79B2009716CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E674B311D1B79B2009716CC /* PBXTargetDependency */,
+			);
+			name = "Viaje Com DarcyTests";
+			productName = "Viaje Com DarcyTests";
+			productReference = 3E674B2F1D1B79B2009716CC /* Viaje Com DarcyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E674B391D1B79B2009716CC /* Viaje Com DarcyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E674B491D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com DarcyUITests" */;
+			buildPhases = (
+				3E674B361D1B79B2009716CC /* Sources */,
+				3E674B371D1B79B2009716CC /* Frameworks */,
+				3E674B381D1B79B2009716CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E674B3C1D1B79B2009716CC /* PBXTargetDependency */,
+			);
+			name = "Viaje Com DarcyUITests";
+			productName = "Viaje Com DarcyUITests";
+			productReference = 3E674B3A1D1B79B2009716CC /* Viaje Com DarcyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E674B0F1D1B79B2009716CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Vitor Albuquerque";
+				TargetAttributes = {
+					3E674B161D1B79B2009716CC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3E674B2E1D1B79B2009716CC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3E674B161D1B79B2009716CC;
+					};
+					3E674B391D1B79B2009716CC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3E674B161D1B79B2009716CC;
+					};
+				};
+			};
+			buildConfigurationList = 3E674B121D1B79B2009716CC /* Build configuration list for PBXProject "Viaje Com Darcy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E674B0E1D1B79B2009716CC;
+			productRefGroup = 3E674B181D1B79B2009716CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E674B161D1B79B2009716CC /* Viaje Com Darcy */,
+				3E674B2E1D1B79B2009716CC /* Viaje Com DarcyTests */,
+				3E674B391D1B79B2009716CC /* Viaje Com DarcyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E674B151D1B79B2009716CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E674B291D1B79B2009716CC /* LaunchScreen.storyboard in Resources */,
+				3E674B261D1B79B2009716CC /* Assets.xcassets in Resources */,
+				3E674B241D1B79B2009716CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E674B2D1D1B79B2009716CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E674B381D1B79B2009716CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E674B131D1B79B2009716CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E674B1D1D1B79B2009716CC /* RootViewController.swift in Sources */,
+				3E674B211D1B79B2009716CC /* ModelController.swift in Sources */,
+				3E674B1F1D1B79B2009716CC /* DataViewController.swift in Sources */,
+				3E674B1B1D1B79B2009716CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E674B2B1D1B79B2009716CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E674B341D1B79B2009716CC /* Viaje_Com_DarcyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E674B361D1B79B2009716CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E674B3F1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E674B311D1B79B2009716CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E674B161D1B79B2009716CC /* Viaje Com Darcy */;
+			targetProxy = 3E674B301D1B79B2009716CC /* PBXContainerItemProxy */;
+		};
+		3E674B3C1D1B79B2009716CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E674B161D1B79B2009716CC /* Viaje Com Darcy */;
+			targetProxy = 3E674B3B1D1B79B2009716CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E674B221D1B79B2009716CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E674B231D1B79B2009716CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E674B271D1B79B2009716CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E674B281D1B79B2009716CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E674B411D1B79B3009716CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E674B421D1B79B3009716CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E674B441D1B79B3009716CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.viajecomdarcy.Viaje-Com-Darcy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3E674B451D1B79B3009716CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.viajecomdarcy.Viaje-Com-Darcy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3E674B471D1B79B3009716CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Viaje Com DarcyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.viajecomdarcy.Viaje-Com-DarcyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viaje Com Darcy.app/Viaje Com Darcy";
+			};
+			name = Debug;
+		};
+		3E674B481D1B79B3009716CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Viaje Com DarcyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.viajecomdarcy.Viaje-Com-DarcyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viaje Com Darcy.app/Viaje Com Darcy";
+			};
+			name = Release;
+		};
+		3E674B4A1D1B79B3009716CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Viaje Com DarcyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.viajecomdarcy.Viaje-Com-DarcyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Viaje Com Darcy";
+			};
+			name = Debug;
+		};
+		3E674B4B1D1B79B3009716CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Viaje Com DarcyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.viajecomdarcy.Viaje-Com-DarcyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Viaje Com Darcy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E674B121D1B79B2009716CC /* Build configuration list for PBXProject "Viaje Com Darcy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E674B411D1B79B3009716CC /* Debug */,
+				3E674B421D1B79B3009716CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E674B431D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com Darcy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E674B441D1B79B3009716CC /* Debug */,
+				3E674B451D1B79B3009716CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3E674B461D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com DarcyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E674B471D1B79B3009716CC /* Debug */,
+				3E674B481D1B79B3009716CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3E674B491D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com DarcyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E674B4A1D1B79B3009716CC /* Debug */,
+				3E674B4B1D1B79B3009716CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E674B0F1D1B79B2009716CC /* Project object */;
+}
