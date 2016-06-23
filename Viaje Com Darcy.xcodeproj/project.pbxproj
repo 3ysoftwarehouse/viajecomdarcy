@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A4219C8568A0B8192D0C26 /* Pods_Viaje_Com_DarcyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8729387D0B65BBD3DC2ECF60 /* Pods_Viaje_Com_DarcyTests.framework */; };
 		3E674B1B1D1B79B2009716CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1A1D1B79B2009716CC /* AppDelegate.swift */; };
 		3E674B1D1D1B79B2009716CC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1C1D1B79B2009716CC /* RootViewController.swift */; };
 		3E674B1F1D1B79B2009716CC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1E1D1B79B2009716CC /* DataViewController.swift */; };
@@ -16,6 +17,8 @@
 		3E674B291D1B79B2009716CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E674B271D1B79B2009716CC /* LaunchScreen.storyboard */; };
 		3E674B341D1B79B2009716CC /* Viaje_Com_DarcyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B331D1B79B2009716CC /* Viaje_Com_DarcyTests.swift */; };
 		3E674B3F1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B3E1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift */; };
+		D6711C50DE824F157509A604 /* Pods_Viaje_Com_DarcyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F239BC1F54FBFFFDC7CA2AF9 /* Pods_Viaje_Com_DarcyUITests.framework */; };
+		F705DC72E534F16941EA8664 /* Pods_Viaje_Com_Darcy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C324BB6C151B9A16048663 /* Pods_Viaje_Com_Darcy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,15 @@
 		3E674B3A1D1B79B2009716CC /* Viaje Com DarcyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viaje Com DarcyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E674B3E1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viaje_Com_DarcyUITests.swift; sourceTree = "<group>"; };
 		3E674B401D1B79B3009716CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		477521EBF6F3F4E1A37CE1A6 /* Pods-Viaje Com DarcyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B8E84777B6D490AD12BCF87 /* Pods-Viaje Com DarcyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyUITests/Pods-Viaje Com DarcyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		761629D734A645B7E0FC2B9B /* Pods-Viaje Com DarcyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86C324BB6C151B9A16048663 /* Pods_Viaje_Com_Darcy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viaje_Com_Darcy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8729387D0B65BBD3DC2ECF60 /* Pods_Viaje_Com_DarcyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viaje_Com_DarcyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F26CFB32A152A795A529DF /* Pods-Viaje Com DarcyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyUITests/Pods-Viaje Com DarcyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C43C7782470612BA8E1B4CE /* Pods-Viaje Com Darcy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com Darcy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy.release.xcconfig"; sourceTree = "<group>"; };
+		B493886044FF54BB14C8392F /* Pods-Viaje Com Darcy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com Darcy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy.debug.xcconfig"; sourceTree = "<group>"; };
+		F239BC1F54FBFFFDC7CA2AF9 /* Pods_Viaje_Com_DarcyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viaje_Com_DarcyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F705DC72E534F16941EA8664 /* Pods_Viaje_Com_Darcy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A4219C8568A0B8192D0C26 /* Pods_Viaje_Com_DarcyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6711C50DE824F157509A604 /* Pods_Viaje_Com_DarcyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				3E674B321D1B79B2009716CC /* Viaje Com DarcyTests */,
 				3E674B3D1D1B79B2009716CC /* Viaje Com DarcyUITests */,
 				3E674B181D1B79B2009716CC /* Products */,
+				4F39638B919B13234AD19E37 /* Pods */,
+				4AF751C81E8E3E80C3D76762 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,29 @@
 			path = "Viaje Com DarcyUITests";
 			sourceTree = "<group>";
 		};
+		4AF751C81E8E3E80C3D76762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86C324BB6C151B9A16048663 /* Pods_Viaje_Com_Darcy.framework */,
+				8729387D0B65BBD3DC2ECF60 /* Pods_Viaje_Com_DarcyTests.framework */,
+				F239BC1F54FBFFFDC7CA2AF9 /* Pods_Viaje_Com_DarcyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F39638B919B13234AD19E37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B493886044FF54BB14C8392F /* Pods-Viaje Com Darcy.debug.xcconfig */,
+				9C43C7782470612BA8E1B4CE /* Pods-Viaje Com Darcy.release.xcconfig */,
+				761629D734A645B7E0FC2B9B /* Pods-Viaje Com DarcyTests.debug.xcconfig */,
+				477521EBF6F3F4E1A37CE1A6 /* Pods-Viaje Com DarcyTests.release.xcconfig */,
+				4B8E84777B6D490AD12BCF87 /* Pods-Viaje Com DarcyUITests.debug.xcconfig */,
+				98F26CFB32A152A795A529DF /* Pods-Viaje Com DarcyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E674B431D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com Darcy" */;
 			buildPhases = (
+				81B5FF40C7E5D90AE31E23CE /* [CP] Check Pods Manifest.lock */,
 				3E674B131D1B79B2009716CC /* Sources */,
 				3E674B141D1B79B2009716CC /* Frameworks */,
 				3E674B151D1B79B2009716CC /* Resources */,
+				2A4518E54E354CBB2D82EAF3 /* [CP] Embed Pods Frameworks */,
+				6D2DBA83A70DF5DBE8B5876A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E674B461D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com DarcyTests" */;
 			buildPhases = (
+				A0A31A643A9BC07569737A8F /* [CP] Check Pods Manifest.lock */,
 				3E674B2B1D1B79B2009716CC /* Sources */,
 				3E674B2C1D1B79B2009716CC /* Frameworks */,
 				3E674B2D1D1B79B2009716CC /* Resources */,
+				586C9C9E938D373674DC6517 /* [CP] Embed Pods Frameworks */,
+				943090D8CCC5C73D43AC0D0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E674B491D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com DarcyUITests" */;
 			buildPhases = (
+				03B7D831B523D0F33065A597 /* [CP] Check Pods Manifest.lock */,
 				3E674B361D1B79B2009716CC /* Sources */,
 				3E674B371D1B79B2009716CC /* Frameworks */,
 				3E674B381D1B79B2009716CC /* Resources */,
+				A3976006626229EDD55B0339 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +304,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03B7D831B523D0F33065A597 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2A4518E54E354CBB2D82EAF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		586C9C9E938D373674DC6517 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D2DBA83A70DF5DBE8B5876A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81B5FF40C7E5D90AE31E23CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		943090D8CCC5C73D43AC0D0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A31A643A9BC07569737A8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3976006626229EDD55B0339 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viaje Com DarcyUITests/Pods-Viaje Com DarcyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E674B131D1B79B2009716CC /* Sources */ = {
@@ -405,6 +576,7 @@
 		};
 		3E674B441D1B79B3009716CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B493886044FF54BB14C8392F /* Pods-Viaje Com Darcy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
@@ -416,6 +588,7 @@
 		};
 		3E674B451D1B79B3009716CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C43C7782470612BA8E1B4CE /* Pods-Viaje Com Darcy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
@@ -427,6 +600,7 @@
 		};
 		3E674B471D1B79B3009716CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761629D734A645B7E0FC2B9B /* Pods-Viaje Com DarcyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Viaje Com DarcyTests/Info.plist";
@@ -439,6 +613,7 @@
 		};
 		3E674B481D1B79B3009716CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477521EBF6F3F4E1A37CE1A6 /* Pods-Viaje Com DarcyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Viaje Com DarcyTests/Info.plist";
@@ -451,6 +626,7 @@
 		};
 		3E674B4A1D1B79B3009716CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8E84777B6D490AD12BCF87 /* Pods-Viaje Com DarcyUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Viaje Com DarcyUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -462,6 +638,7 @@
 		};
 		3E674B4B1D1B79B3009716CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F26CFB32A152A795A529DF /* Pods-Viaje Com DarcyUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Viaje Com DarcyUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -490,6 +667,7 @@
 				3E674B451D1B79B3009716CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E674B461D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com DarcyTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +676,7 @@
 				3E674B481D1B79B3009716CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E674B491D1B79B3009716CC /* Build configuration list for PBXNativeTarget "Viaje Com DarcyUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +685,7 @@
 				3E674B4B1D1B79B3009716CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

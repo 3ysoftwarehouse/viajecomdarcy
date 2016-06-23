@@ -1,0 +1,6 @@
+framework module Pods_Viaje_Com_DarcyTests {
+  umbrella header "Pods-Viaje Com DarcyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

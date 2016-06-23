@@ -29,6 +29,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         let dateFormatter = NSDateFormatter()
         pageData = dateFormatter.monthSymbols
     }
+    
 
     func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> DataViewController? {
         // Return the data view controller for the given index.
