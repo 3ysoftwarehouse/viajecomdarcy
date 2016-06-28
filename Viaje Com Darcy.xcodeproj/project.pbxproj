@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00A4219C8568A0B8192D0C26 /* Pods_Viaje_Com_DarcyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8729387D0B65BBD3DC2ECF60 /* Pods_Viaje_Com_DarcyTests.framework */; };
+		3E09F8871D220FF9002D321E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09F8861D220FF9002D321E /* RoundedButton.swift */; };
 		3E674B1B1D1B79B2009716CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1A1D1B79B2009716CC /* AppDelegate.swift */; };
 		3E674B1D1D1B79B2009716CC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1C1D1B79B2009716CC /* RootViewController.swift */; };
 		3E674B1F1D1B79B2009716CC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B1E1D1B79B2009716CC /* DataViewController.swift */; };
@@ -17,6 +18,9 @@
 		3E674B291D1B79B2009716CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E674B271D1B79B2009716CC /* LaunchScreen.storyboard */; };
 		3E674B341D1B79B2009716CC /* Viaje_Com_DarcyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B331D1B79B2009716CC /* Viaje_Com_DarcyTests.swift */; };
 		3E674B3F1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E674B3E1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift */; };
+		3E6D348A1D2206F20048C6AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */; };
+		3E6D348B1D2206F20048C6AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */; };
+		3E6D348C1D2206F20048C6AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */; };
 		D6711C50DE824F157509A604 /* Pods_Viaje_Com_DarcyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F239BC1F54FBFFFDC7CA2AF9 /* Pods_Viaje_Com_DarcyUITests.framework */; };
 		F705DC72E534F16941EA8664 /* Pods_Viaje_Com_Darcy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C324BB6C151B9A16048663 /* Pods_Viaje_Com_Darcy.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E09F8861D220FF9002D321E /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		3E674B171D1B79B2009716CC /* Viaje Com Darcy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viaje Com Darcy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E674B1A1D1B79B2009716CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E674B1C1D1B79B2009716CC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 		3E674B3A1D1B79B2009716CC /* Viaje Com DarcyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viaje Com DarcyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E674B3E1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viaje_Com_DarcyUITests.swift; sourceTree = "<group>"; };
 		3E674B401D1B79B3009716CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		477521EBF6F3F4E1A37CE1A6 /* Pods-Viaje Com DarcyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B8E84777B6D490AD12BCF87 /* Pods-Viaje Com DarcyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyUITests/Pods-Viaje Com DarcyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		761629D734A645B7E0FC2B9B /* Pods-Viaje Com DarcyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +99,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E09F8831D220FC7002D321E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3E09F8841D220FCC002D321E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E09F8861D220FF9002D321E /* RoundedButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3E09F8851D220FD0002D321E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3E674B0E1D1B79B2009716CC = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +146,9 @@
 		3E674B191D1B79B2009716CC /* Viaje Com Darcy */ = {
 			isa = PBXGroup;
 			children = (
+				3E09F8851D220FD0002D321E /* Model */,
+				3E09F8841D220FCC002D321E /* View */,
+				3E09F8831D220FC7002D321E /* Controller */,
 				3E674B1A1D1B79B2009716CC /* AppDelegate.swift */,
 				3E674B1C1D1B79B2009716CC /* RootViewController.swift */,
 				3E674B1E1D1B79B2009716CC /* DataViewController.swift */,
@@ -125,6 +156,7 @@
 				3E674B221D1B79B2009716CC /* Main.storyboard */,
 				3E674B251D1B79B2009716CC /* Assets.xcassets */,
 				3E674B271D1B79B2009716CC /* LaunchScreen.storyboard */,
+				3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */,
 				3E674B2A1D1B79B2009716CC /* Info.plist */,
 			);
 			path = "Viaje Com Darcy";
@@ -284,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E674B291D1B79B2009716CC /* LaunchScreen.storyboard in Resources */,
+				3E6D348A1D2206F20048C6AD /* GoogleService-Info.plist in Resources */,
 				3E674B261D1B79B2009716CC /* Assets.xcassets in Resources */,
 				3E674B241D1B79B2009716CC /* Main.storyboard in Resources */,
 			);
@@ -293,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6D348B1D2206F20048C6AD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6D348C1D2206F20048C6AD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E674B1D1D1B79B2009716CC /* RootViewController.swift in Sources */,
+				3E09F8871D220FF9002D321E /* RoundedButton.swift in Sources */,
 				3E674B211D1B79B2009716CC /* ModelController.swift in Sources */,
 				3E674B1F1D1B79B2009716CC /* DataViewController.swift in Sources */,
 				3E674B1B1D1B79B2009716CC /* AppDelegate.swift in Sources */,
@@ -581,7 +617,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.viajecomdarcy.Viaje-Com-Darcy";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.viajecomdarcy.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -593,7 +629,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.viajecomdarcy.Viaje-Com-Darcy";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.viajecomdarcy.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -6,10 +6,17 @@ target 'Viaje Com Darcy' do
   use_frameworks!
 
   # Pods for Viaje Com Darcy
+  
+  #Firebase
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Crash'
   pod 'Firebase/Auth'
+  
+  # Facebook
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKLoginKit'
 
   target 'Viaje Com DarcyTests' do
     inherit! :search_paths
