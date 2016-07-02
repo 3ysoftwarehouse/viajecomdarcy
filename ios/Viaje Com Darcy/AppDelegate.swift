@@ -1,13 +1,5 @@
-//
-//  AppDelegate.swift
-//  Viaje Com Darcy
-//
-//  Created by Vitor Albuquerque on 6/22/16.
-//  Copyright © 2016 Vitor Albuquerque. All rights reserved.
-//
-
 import UIKit
-import Firebase
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +8,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        FIRApp.configure()
+        initializeParse()
         return true
+    }
+    
+    func initializeParse() {
+        Parse.initializeWithConfiguration(ParseClientConfiguration { (configuration) in
+            configuration.applicationId = "HYCy74Id5nqiRN2Sf4zGJ0ge9lMd97aaZcHiH7Uj"
+            configuration.clientKey = "64BXIdOCvAra0SlbGRbTW2RYkzBgx3vbVIagZzSN"
+        })
     }
 
     func applicationWillResignActive(application: UIApplication) {
