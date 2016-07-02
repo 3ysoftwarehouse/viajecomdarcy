@@ -1,7 +1,7 @@
 import Foundation
 import Parse
 
-class ParseUserService: UserService {
+class UserParseService: UserService {
     
     private let parseUserConverter: ParseUserToUserConverter!
     

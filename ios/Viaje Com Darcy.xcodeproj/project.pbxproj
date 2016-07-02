@@ -19,11 +19,13 @@
 		3E6D348A1D2206F20048C6AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */; };
 		3E6D348B1D2206F20048C6AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */; };
 		3E6D348C1D2206F20048C6AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */; };
-		3E78D7931D2810EA00C29401 /* ParseUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7921D2810EA00C29401 /* ParseUserService.swift */; };
+		3E78D7931D2810EA00C29401 /* UserParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7921D2810EA00C29401 /* UserParseService.swift */; };
 		3E78D7961D28117000C29401 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7951D28117000C29401 /* User.swift */; };
 		3E78D7981D2811F800C29401 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7971D2811F800C29401 /* UserService.swift */; };
 		3E78D79F1D2836EF00C29401 /* ParseUserToUserConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D79E1D2836EF00C29401 /* ParseUserToUserConverter.swift */; };
 		3E78D7A11D28394800C29401 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7A01D28394800C29401 /* ChallengeViewController.swift */; };
+		3E78D7A51D283F6E00C29401 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7A41D283F6E00C29401 /* ChallengeService.swift */; };
+		3E78D7A71D283F8A00C29401 /* ChallengeParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7A61D283F8A00C29401 /* ChallengeParseService.swift */; };
 		D6711C50DE824F157509A604 /* Pods_Viaje_Com_DarcyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F239BC1F54FBFFFDC7CA2AF9 /* Pods_Viaje_Com_DarcyUITests.framework */; };
 		F705DC72E534F16941EA8664 /* Pods_Viaje_Com_Darcy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C324BB6C151B9A16048663 /* Pods_Viaje_Com_Darcy.framework */; };
 /* End PBXBuildFile section */
@@ -61,11 +63,13 @@
 		3E674B3E1D1B79B2009716CC /* Viaje_Com_DarcyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viaje_Com_DarcyUITests.swift; sourceTree = "<group>"; };
 		3E674B401D1B79B3009716CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E6D34891D2206F20048C6AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3E78D7921D2810EA00C29401 /* ParseUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseUserService.swift; sourceTree = "<group>"; };
+		3E78D7921D2810EA00C29401 /* UserParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserParseService.swift; sourceTree = "<group>"; };
 		3E78D7951D28117000C29401 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3E78D7971D2811F800C29401 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3E78D79E1D2836EF00C29401 /* ParseUserToUserConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseUserToUserConverter.swift; sourceTree = "<group>"; };
 		3E78D7A01D28394800C29401 /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		3E78D7A41D283F6E00C29401 /* ChallengeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
+		3E78D7A61D283F8A00C29401 /* ChallengeParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeParseService.swift; sourceTree = "<group>"; };
 		477521EBF6F3F4E1A37CE1A6 /* Pods-Viaje Com DarcyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B8E84777B6D490AD12BCF87 /* Pods-Viaje Com DarcyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyUITests/Pods-Viaje Com DarcyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		761629D734A645B7E0FC2B9B /* Pods-Viaje Com DarcyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,9 +194,11 @@
 		3E78D7911D2810C800C29401 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				3E78D7921D2810EA00C29401 /* ParseUserService.swift */,
+				3E78D7921D2810EA00C29401 /* UserParseService.swift */,
 				3E78D7971D2811F800C29401 /* UserService.swift */,
 				3E78D79E1D2836EF00C29401 /* ParseUserToUserConverter.swift */,
+				3E78D7A41D283F6E00C29401 /* ChallengeService.swift */,
+				3E78D7A61D283F8A00C29401 /* ChallengeParseService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -493,7 +499,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E78D7931D2810EA00C29401 /* ParseUserService.swift in Sources */,
+				3E78D7A51D283F6E00C29401 /* ChallengeService.swift in Sources */,
+				3E78D7931D2810EA00C29401 /* UserParseService.swift in Sources */,
 				3E1A07391D28067D00FEE10F /* LoginViewController.swift in Sources */,
 				3E78D7A11D28394800C29401 /* ChallengeViewController.swift in Sources */,
 				3E78D79F1D2836EF00C29401 /* ParseUserToUserConverter.swift in Sources */,
@@ -501,6 +508,7 @@
 				3E09F8871D220FF9002D321E /* RoundedButton.swift in Sources */,
 				3E78D7961D28117000C29401 /* User.swift in Sources */,
 				3E674B1B1D1B79B2009716CC /* AppDelegate.swift in Sources */,
+				3E78D7A71D283F8A00C29401 /* ChallengeParseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

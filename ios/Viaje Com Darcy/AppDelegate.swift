@@ -27,18 +27,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             container.register(ParseUserToUserConverter.self) { _ in ParseUserToUserConverter() }
             
-            container.register(UserService.self) { resolver in
-                ParseUserService(parseUserConverter: resolver.resolve(ParseUserToUserConverter.self)!)
-            }
+            setupServiceDependencies(container)
+            setupControllerDependencies(container)
             
-            container.registerForStoryboard(LoginViewController.self, initCompleted: { (resolver, controller) in
-                controller.userService = resolver.resolve(UserService.self)
-            })
-            
-            container.registerForStoryboard(ChallengeViewController.self, initCompleted: { (resolver, controller) in
-                
-            })
         }
+    }
+    
+    func setupServiceDependencies(container: Container) {
+        container.register(UserService.self) { resolver in
+            UserParseService(parseUserConverter: resolver.resolve(ParseUserToUserConverter.self)!)
+        }
+        container.register(ChallengeService.self) { _ in ChallengeParseService() }
+    }
+    
+    func setupControllerDependencies(container: Container) {
+        container.registerForStoryboard(LoginViewController.self, initCompleted: { (resolver, controller) in
+            controller.userService = resolver.resolve(UserService.self)
+        })
+        
+        container.registerForStoryboard(ChallengeViewController.self, initCompleted: { (resolver, controller) in
+            controller.challengeService = resolver.resolve(ChallengeService.self)
+        })
     }
     
     func initializeStoryboard() {

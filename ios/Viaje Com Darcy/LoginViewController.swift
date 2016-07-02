@@ -3,11 +3,9 @@ import Parse
 
 class LoginViewController: UIViewController {
 
-
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    // inject
     var userService: UserService!
     
     override func viewDidLoad() {
@@ -60,16 +58,15 @@ class LoginViewController: UIViewController {
         
         self.goToMain()
     }
+
+    func goToMain() {
+        self.performSegueWithIdentifier("ChallengeViewController", sender: nil)
+    }
     
-    func displayError(title _: String! = "Erro", message: String!, actionName: String! = "Fechar") {
+    func displayError(title title: String! = "Erro", message: String!, actionName: String! = "Fechar") {
         let alertController = UIAlertController(title: title, message:
             message, preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: actionName, style: UIAlertActionStyle.Default,handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
-    }
-
-    func goToMain() {
-        print("Foi para o main")
-        self.performSegueWithIdentifier("ChallengeViewController", sender: nil)
     }
 }
