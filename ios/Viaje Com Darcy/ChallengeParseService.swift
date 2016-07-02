@@ -3,6 +3,9 @@ import Parse
 
 class ChallengeParseService: ChallengeService {
     
+    
+    let POST_TYPE_CHALLENGE_ID = "BnlxOo7FtG"
+    
     let parseChallengeConverter: ParseChallengeConverter!
     
     init(parseChallengeConverter: ParseChallengeConverter) {
@@ -31,12 +34,24 @@ class ChallengeParseService: ChallengeService {
         let imageFile = PFFile(name: "image.jpg", data: image)
         imageFile?.saveInBackgroundWithBlock({ (saved, error) in
             if (saved) {
-                let userChallengeImg = PFObject(className: "UserDesafioImagem")
-                userChallengeImg["picture"] = imageFile
-                userChallengeImg["desafio"] = PFObject(withoutDataWithClassName: "Desafio", objectId: challenge.id)
-                userChallengeImg["user"] = PFUser.currentUser()
-                userChallengeImg.saveInBackgroundWithBlock({ (saved, error) in
-                    block(saved)
+                
+                let picture = PFObject(className: "Picture")
+                picture["file"] = imageFile
+                picture["thumbnail"] = imageFile
+                picture.saveInBackgroundWithBlock({ (saved, error) in
+                    if (saved) {
+                        
+                        let post = PFObject(className: "Post")
+                        post["picture"] = picture
+                        post["author"] = PFUser.currentUser()
+                        post["type"] = PFObject(withoutDataWithClassName: "PostType", objectId: self.POST_TYPE_CHALLENGE_ID)
+                        post.saveInBackgroundWithBlock({ (saved, error) in
+                            block(saved)
+                        })
+                        
+                    } else {
+                        block(false)
+                    }
                 })
             } else {
                 block(false)

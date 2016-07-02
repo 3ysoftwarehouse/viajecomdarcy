@@ -106,7 +106,7 @@ class ChallengeViewController: UIViewController, UITableViewDataSource, UITableV
     func uploadImage(image: UIImage!) {
         let loadingController = displayLoading()
         
-        let img = UIImageJPEGRepresentation(image, 0.9)
+        let img = UIImageJPEGRepresentation(image, 0.8)
         challengeService.saveForLoggedUser(image: img!, toChallenge: selectedChallenge) { (saved) in
             loadingController.dismissViewControllerAnimated(false, completion: nil)
             if (saved) {
