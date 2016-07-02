@@ -66,7 +66,7 @@
                                                     <constraint firstAttribute="width" constant="292" id="TNd-KV-Q8X"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -152,7 +152,7 @@
         <!--Desafios-->
         <scene sceneID="mAo-WC-sMX">
             <objects>
-                <viewController title="Desafios" id="eLB-A5-lij" sceneMemberID="viewController">
+                <viewController title="Desafios" id="eLB-A5-lij" customClass="ChallengeViewController" customModule="Viaje_Com_Darcy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fjZ-Fi-5Jd"/>
                         <viewControllerLayoutGuide type="bottom" id="hfW-NV-heY"/>
@@ -161,24 +161,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzY-hm-8DW">
-                                <rect key="frame" x="20" y="28" width="143" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desafios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzY-hm-8DW">
+                                <rect key="frame" x="246" y="28" width="108" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="143" id="MWt-tv-sZk"/>
+                                    <constraint firstAttribute="width" constant="108" id="MWt-tv-sZk"/>
                                     <constraint firstAttribute="height" constant="40" id="ofa-pR-jnN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gS1-7Q-klR">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="0.20000000000000001" green="0.45098039220000002" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wPz-0l-v5S">
+                                <rect key="frame" x="0.0" y="76" width="600" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChallengeCell" rowHeight="57" id="d4i-8D-AXG" customClass="ChallengeCell" customModule="Viaje_Com_Darcy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d4i-8D-AXG" id="8H9-zo-aQu">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fonte encantada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-wy-iK2">
+                                                    <rect key="frame" x="8" y="8" width="584" height="20"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ache o Mickey ao redor da fonte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oau-In-J3g">
+                                                    <rect key="frame" x="8" y="28" width="584" height="20"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CRc-wy-iK2" firstAttribute="top" secondItem="8H9-zo-aQu" secondAttribute="topMargin" id="1NF-Aa-Ugk"/>
+                                                <constraint firstItem="Oau-In-J3g" firstAttribute="trailing" secondItem="8H9-zo-aQu" secondAttribute="trailingMargin" id="5JU-9A-EcR"/>
+                                                <constraint firstItem="Oau-In-J3g" firstAttribute="bottom" secondItem="8H9-zo-aQu" secondAttribute="bottomMargin" id="GfR-OI-nhs"/>
+                                                <constraint firstItem="CRc-wy-iK2" firstAttribute="leading" secondItem="8H9-zo-aQu" secondAttribute="leadingMargin" id="hTs-o0-WYn"/>
+                                                <constraint firstItem="Oau-In-J3g" firstAttribute="leading" secondItem="8H9-zo-aQu" secondAttribute="leadingMargin" id="hhy-UI-CsA"/>
+                                                <constraint firstItem="Oau-In-J3g" firstAttribute="top" secondItem="8H9-zo-aQu" secondAttribute="topMargin" constant="20" id="pWZ-w8-03x"/>
+                                                <constraint firstItem="CRc-wy-iK2" firstAttribute="trailing" secondItem="8H9-zo-aQu" secondAttribute="trailingMargin" id="tMU-XP-vuG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="Oau-In-J3g" id="lYy-5w-GgW"/>
+                                            <outlet property="titleLabel" destination="CRc-wy-iK2" id="f6i-eX-fuR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eLB-A5-lij" id="4Fc-Et-6xW"/>
+                                    <outlet property="delegate" destination="eLB-A5-lij" id="nCQ-8x-QWg"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bzY-hm-8DW" firstAttribute="top" secondItem="fjZ-Fi-5Jd" secondAttribute="bottom" constant="8" id="1qP-Yr-hdA"/>
+                            <constraint firstItem="wPz-0l-v5S" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leading" id="DDF-f2-KzM"/>
+                            <constraint firstItem="bzY-hm-8DW" firstAttribute="centerX" secondItem="AXG-1e-T6T" secondAttribute="centerX" id="Hkv-Ub-2Ee"/>
+                            <constraint firstAttribute="trailing" secondItem="wPz-0l-v5S" secondAttribute="trailing" id="cDZ-21-vph"/>
+                            <constraint firstItem="gS1-7Q-klR" firstAttribute="centerX" secondItem="AXG-1e-T6T" secondAttribute="centerX" id="cjL-qc-BEO"/>
+                            <constraint firstItem="hfW-NV-heY" firstAttribute="top" secondItem="wPz-0l-v5S" secondAttribute="bottom" id="hhx-tG-iBD"/>
+                            <constraint firstItem="wPz-0l-v5S" firstAttribute="top" secondItem="bzY-hm-8DW" secondAttribute="bottom" constant="8" id="lud-sA-4Fj"/>
+                            <constraint firstItem="gS1-7Q-klR" firstAttribute="centerY" secondItem="AXG-1e-T6T" secondAttribute="centerY" id="mtH-PN-TBv"/>
                             <constraint firstItem="bzY-hm-8DW" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leadingMargin" id="ouR-lX-QQ2"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ouR-lX-QQ2"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="NNJ-Oe-7vx"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="gS1-7Q-klR" id="CKd-9a-26L"/>
+                        <outlet property="tableView" destination="wPz-0l-v5S" id="gdZ-AK-9V5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUh-BS-g8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

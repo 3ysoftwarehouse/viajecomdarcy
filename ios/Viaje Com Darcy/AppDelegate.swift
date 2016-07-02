@@ -25,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func initializeDependencyContainer() {
         self.container = Container { (container) in
             
-            container.register(ParseUserToUserConverter.self) { _ in ParseUserToUserConverter() }
+            container.register(ParseUserConverter.self) { _ in ParseUserConverter() }
+            container.register(ParseChallengeConverter.self) { _ in ParseChallengeConverter() }
             
             setupServiceDependencies(container)
             setupControllerDependencies(container)
@@ -35,9 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupServiceDependencies(container: Container) {
         container.register(UserService.self) { resolver in
-            UserParseService(parseUserConverter: resolver.resolve(ParseUserToUserConverter.self)!)
+            UserParseService(parseUserConverter: resolver.resolve(ParseUserConverter.self)!)
         }
-        container.register(ChallengeService.self) { _ in ChallengeParseService() }
+        container.register(ChallengeService.self) { resolver in
+            ChallengeParseService(parseChallengeConverter: resolver.resolve(ParseChallengeConverter.self)!)
+        }
     }
     
     func setupControllerDependencies(container: Container) {

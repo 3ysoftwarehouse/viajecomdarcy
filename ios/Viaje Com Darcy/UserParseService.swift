@@ -3,9 +3,9 @@ import Parse
 
 class UserParseService: UserService {
     
-    private let parseUserConverter: ParseUserToUserConverter!
+    private let parseUserConverter: ParseUserConverter!
     
-    init(parseUserConverter: ParseUserToUserConverter) {
+    init(parseUserConverter: ParseUserConverter) {
         self.parseUserConverter = parseUserConverter
     }
     

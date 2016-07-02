@@ -22,10 +22,13 @@
 		3E78D7931D2810EA00C29401 /* UserParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7921D2810EA00C29401 /* UserParseService.swift */; };
 		3E78D7961D28117000C29401 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7951D28117000C29401 /* User.swift */; };
 		3E78D7981D2811F800C29401 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7971D2811F800C29401 /* UserService.swift */; };
-		3E78D79F1D2836EF00C29401 /* ParseUserToUserConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D79E1D2836EF00C29401 /* ParseUserToUserConverter.swift */; };
+		3E78D79F1D2836EF00C29401 /* ParseUserConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D79E1D2836EF00C29401 /* ParseUserConverter.swift */; };
 		3E78D7A11D28394800C29401 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7A01D28394800C29401 /* ChallengeViewController.swift */; };
 		3E78D7A51D283F6E00C29401 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7A41D283F6E00C29401 /* ChallengeService.swift */; };
 		3E78D7A71D283F8A00C29401 /* ChallengeParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7A61D283F8A00C29401 /* ChallengeParseService.swift */; };
+		3E78D7A91D28485400C29401 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7A81D28485400C29401 /* Challenge.swift */; };
+		3E78D7AC1D284A2E00C29401 /* ParseChallengeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7AB1D284A2E00C29401 /* ParseChallengeConverter.swift */; };
+		3E78D7AE1D284CE400C29401 /* ChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78D7AD1D284CE400C29401 /* ChallengeCell.swift */; };
 		D6711C50DE824F157509A604 /* Pods_Viaje_Com_DarcyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F239BC1F54FBFFFDC7CA2AF9 /* Pods_Viaje_Com_DarcyUITests.framework */; };
 		F705DC72E534F16941EA8664 /* Pods_Viaje_Com_Darcy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C324BB6C151B9A16048663 /* Pods_Viaje_Com_Darcy.framework */; };
 /* End PBXBuildFile section */
@@ -66,10 +69,13 @@
 		3E78D7921D2810EA00C29401 /* UserParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserParseService.swift; sourceTree = "<group>"; };
 		3E78D7951D28117000C29401 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3E78D7971D2811F800C29401 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		3E78D79E1D2836EF00C29401 /* ParseUserToUserConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseUserToUserConverter.swift; sourceTree = "<group>"; };
+		3E78D79E1D2836EF00C29401 /* ParseUserConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseUserConverter.swift; sourceTree = "<group>"; };
 		3E78D7A01D28394800C29401 /* ChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		3E78D7A41D283F6E00C29401 /* ChallengeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
 		3E78D7A61D283F8A00C29401 /* ChallengeParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeParseService.swift; sourceTree = "<group>"; };
+		3E78D7A81D28485400C29401 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		3E78D7AB1D284A2E00C29401 /* ParseChallengeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseChallengeConverter.swift; sourceTree = "<group>"; };
+		3E78D7AD1D284CE400C29401 /* ChallengeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCell.swift; sourceTree = "<group>"; };
 		477521EBF6F3F4E1A37CE1A6 /* Pods-Viaje Com DarcyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B8E84777B6D490AD12BCF87 /* Pods-Viaje Com DarcyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyUITests/Pods-Viaje Com DarcyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		761629D734A645B7E0FC2B9B /* Pods-Viaje Com DarcyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				3E09F8861D220FF9002D321E /* RoundedButton.swift */,
+				3E78D7AD1D284CE400C29401 /* ChallengeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -194,9 +201,9 @@
 		3E78D7911D2810C800C29401 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3E78D7AA1D2848CC00C29401 /* Converters */,
 				3E78D7921D2810EA00C29401 /* UserParseService.swift */,
 				3E78D7971D2811F800C29401 /* UserService.swift */,
-				3E78D79E1D2836EF00C29401 /* ParseUserToUserConverter.swift */,
 				3E78D7A41D283F6E00C29401 /* ChallengeService.swift */,
 				3E78D7A61D283F8A00C29401 /* ChallengeParseService.swift */,
 			);
@@ -207,8 +214,18 @@
 			isa = PBXGroup;
 			children = (
 				3E78D7951D28117000C29401 /* User.swift */,
+				3E78D7A81D28485400C29401 /* Challenge.swift */,
 			);
 			name = Entities;
+			sourceTree = "<group>";
+		};
+		3E78D7AA1D2848CC00C29401 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				3E78D79E1D2836EF00C29401 /* ParseUserConverter.swift */,
+				3E78D7AB1D284A2E00C29401 /* ParseChallengeConverter.swift */,
+			);
+			name = Converters;
 			sourceTree = "<group>";
 		};
 		4AF751C81E8E3E80C3D76762 /* Frameworks */ = {
@@ -310,6 +327,7 @@
 				TargetAttributes = {
 					3E674B161D1B79B2009716CC = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 37EZQU8TF7;
 					};
 					3E674B2E1D1B79B2009716CC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -502,12 +520,15 @@
 				3E78D7A51D283F6E00C29401 /* ChallengeService.swift in Sources */,
 				3E78D7931D2810EA00C29401 /* UserParseService.swift in Sources */,
 				3E1A07391D28067D00FEE10F /* LoginViewController.swift in Sources */,
+				3E78D7AC1D284A2E00C29401 /* ParseChallengeConverter.swift in Sources */,
 				3E78D7A11D28394800C29401 /* ChallengeViewController.swift in Sources */,
-				3E78D79F1D2836EF00C29401 /* ParseUserToUserConverter.swift in Sources */,
+				3E78D79F1D2836EF00C29401 /* ParseUserConverter.swift in Sources */,
 				3E78D7981D2811F800C29401 /* UserService.swift in Sources */,
 				3E09F8871D220FF9002D321E /* RoundedButton.swift in Sources */,
 				3E78D7961D28117000C29401 /* User.swift in Sources */,
 				3E674B1B1D1B79B2009716CC /* AppDelegate.swift in Sources */,
+				3E78D7AE1D284CE400C29401 /* ChallengeCell.swift in Sources */,
+				3E78D7A91D28485400C29401 /* Challenge.swift in Sources */,
 				3E78D7A71D283F8A00C29401 /* ChallengeParseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,10 +672,13 @@
 			baseConfigurationReference = B493886044FF54BB14C8392F /* Pods-Viaje Com Darcy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.viajecomdarcy.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -663,10 +687,13 @@
 			baseConfigurationReference = 9C43C7782470612BA8E1B4CE /* Pods-Viaje Com Darcy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.viajecomdarcy.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

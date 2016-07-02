@@ -1,7 +1,7 @@
 import UIKit
 import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -10,6 +10,20 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupFields()
+    }
+    
+    func setupFields() {
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if (textField.isEqual(passwordTextField)) {
+            self.view.endEditing(true)
+            attemptLogin(textField)
+        }
+        return false
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -28,11 +42,34 @@ class LoginViewController: UIViewController {
             return
         }
         
+        let loadingController = displayLoading()
         if let username = usernameTextField.text, let password = passwordTextField.text {
             userService.authenticate(username, password: password, block: { (result) in
+                self.dismissLoading(loadingController)
                 self.onLoginResult(result)
             })
+        } else {
+            dismissLoading(loadingController)
         }
+    }
+    
+    func displayLoading() -> UIAlertController {
+        let alert = UIAlertController(title: nil, message: "Aguarde...", preferredStyle: .Alert)
+        
+        alert.view.tintColor = UIColor.blackColor()
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(10, 5, 50, 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        loadingIndicator.startAnimating();
+        
+        alert.view.addSubview(loadingIndicator)
+        presentViewController(alert, animated: true, completion: nil)
+        
+        return alert
+    }
+    
+    func dismissLoading(loadingController: UIAlertController) {
+        loadingController.dismissViewControllerAnimated(false, completion: nil)
     }
     
     func validateFields() -> Bool {
@@ -69,4 +106,6 @@ class LoginViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: actionName, style: UIAlertActionStyle.Default,handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
     }
+    
+    
 }
