@@ -1,14 +1,17 @@
 import UIKit
 import Parse
+import Swinject
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var container: Container!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         initializeParse()
+        initializeDependencyContainer()
+        initializeStoryboard()
         return true
     }
     
@@ -17,6 +20,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.applicationId = "HYCy74Id5nqiRN2Sf4zGJ0ge9lMd97aaZcHiH7Uj"
             configuration.clientKey = "64BXIdOCvAra0SlbGRbTW2RYkzBgx3vbVIagZzSN"
         })
+    }
+    
+    func initializeDependencyContainer() {
+        self.container = Container { (container) in
+            
+            container.register(ParseUserToUserConverter.self) { _ in ParseUserToUserConverter() }
+            
+            container.register(UserService.self) { resolver in
+                ParseUserService(parseUserConverter: resolver.resolve(ParseUserToUserConverter.self)!)
+            }
+            
+            container.registerForStoryboard(LoginViewController.self, initCompleted: { (resolver, controller) in
+                controller.userService = resolver.resolve(UserService.self)
+            })
+            
+            container.registerForStoryboard(ChallengeViewController.self, initCompleted: { (resolver, controller) in
+                
+            })
+        }
+    }
+    
+    func initializeStoryboard() {
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window.makeKeyAndVisible()
+        self.window = window
+        
+        let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil, container: container)
+        window.rootViewController = storyboard.instantiateInitialViewController()
     }
 
     func applicationWillResignActive(application: UIApplication) {

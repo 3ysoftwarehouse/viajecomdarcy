@@ -3,14 +3,57 @@ import Parse
 
 class LoginViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    // inject
+    var userService: UserService!
+    
+    @IBAction func attemptLogin(sender: AnyObject) {
+        if (!validateFields()) {
+            return
+        }
         
-        let query = PFQuery(className: "Escola")
-        query.findObjectsInBackgroundWithBlock { (result, error) in
-            result?.forEach({ (escola) in
-                print(escola)
+        if let username = usernameTextField.text, let password = passwordTextField.text {
+            userService.authenticate(username, password: password, block: { (result) in
+                self.onLoginResult(result)
             })
         }
+    }
+    
+    func validateFields() -> Bool {
+        guard usernameTextField.text != nil && usernameTextField.text?.isEmpty == false else {
+            usernameTextField.layer.borderColor = UIColor.redColor().CGColor
+            displayError(message: "Por favor, preencha o RG.")
+            return false
+        }
+        
+        guard passwordTextField.text != nil && passwordTextField.text?.isEmpty == false else {
+            passwordTextField.layer.borderColor = UIColor.redColor().CGColor
+            displayError(message: "Por favor, preencha a senha.")
+            return false
+        }
+        return true
+    }
+    
+    func onLoginResult(result: User?) {
+        guard result != nil else {
+            displayError(message: "RG ou senha inválidos!")
+            return
+        }
+        
+        self.goToMain()
+    }
+    
+    func displayError(title _: String! = "Erro", message: String!, actionName: String! = "Fechar") {
+        let alertController = UIAlertController(title: title, message:
+            message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: actionName, style: UIAlertActionStyle.Default,handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+
+    func goToMain() {
+        self.performSegueWithIdentifier("ChallengeViewController", sender: nil)
     }
 }
