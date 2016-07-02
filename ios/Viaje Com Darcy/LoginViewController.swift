@@ -10,6 +10,21 @@ class LoginViewController: UIViewController {
     // inject
     var userService: UserService!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        checkUserAuthenticated()
+    }
+    
+    func checkUserAuthenticated() {
+        if (userService.isAuthenticated()) {
+            goToMain()
+        }
+    }
+    
     @IBAction func attemptLogin(sender: AnyObject) {
         if (!validateFields()) {
             return
@@ -54,6 +69,7 @@ class LoginViewController: UIViewController {
     }
 
     func goToMain() {
+        print("Foi para o main")
         self.performSegueWithIdentifier("ChallengeViewController", sender: nil)
     }
 }

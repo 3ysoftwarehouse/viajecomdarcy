@@ -19,4 +19,8 @@ class ParseUserService: UserService {
         }
     }
     
+    func isAuthenticated() -> Bool {
+        return PFUser.currentUser() != nil
+    }
+    
 }
