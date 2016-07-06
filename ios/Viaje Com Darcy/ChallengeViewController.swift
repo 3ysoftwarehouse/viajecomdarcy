@@ -58,18 +58,17 @@ class ChallengeViewController: UIViewController,
         if challenges.count == 0 || index >= challenges.count {
             return nil
         }
-        selectedChallenge = challenges[index]
-        
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         let dataViewController = storyboard.instantiateViewControllerWithIdentifier("CurrentChallengeViewController") as! CurrentChallengeViewController
         
-        dataViewController.challenge = selectedChallenge
+        dataViewController.challenge = challenges[index]
+        dataViewController.onChallengeAcceptedListener = onChallengeAcceptedListener
         return dataViewController
     }
     
     func indexOfViewController(viewController: CurrentChallengeViewController) -> Int {
-        if let selectedChallenge: Challenge = viewController.challenge {
-            return challenges.indexOf({ challenge in challenge.id == selectedChallenge.id })!
+        if let searchedChallenge: Challenge = viewController.challenge {
+            return challenges.indexOf({ challenge in challenge.id == searchedChallenge.id })!
         } else {
             return NSNotFound
         }
@@ -101,17 +100,20 @@ class ChallengeViewController: UIViewController,
         imagePicker.delegate = self
     }
     
+    func onChallengeAcceptedListener(challenge: Challenge) {
+        selectedChallenge = challenge
+        displayImageOptions()
+    }
+    
     func displayImageOptions() {
-        let alertVC = UIAlertController(title: "Escolha uma imagem", message: nil, preferredStyle: .ActionSheet)
-        let cameraAction = UIAlertAction(title: "Câmera", style: .Default) { (action) in
+        let alertVC = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
+        let cameraAction = UIAlertAction(title: "Tirar foto com a câmera", style: .Default) { (action) in
             self.openCamera()
         }
-        let galleryAction = UIAlertAction(title: "Galeria", style: .Default) { (action) in
+        let galleryAction = UIAlertAction(title: "Escolher foto nos álbuns", style: .Default) { (action) in
             self.openGallery()
         }
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .Default) { (action) in
-            
-        }
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .Destructive, handler: nil)
         alertVC.addAction(cameraAction)
         alertVC.addAction(galleryAction)
         alertVC.addAction(cancelAction)
