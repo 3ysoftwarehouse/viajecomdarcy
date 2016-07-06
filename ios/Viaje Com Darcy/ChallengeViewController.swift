@@ -1,22 +1,29 @@
 import UIKit
 
-class ChallengeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ChallengeViewController: UIViewController,
+    UIPageViewControllerDataSource, UIPageViewControllerDelegate,
+    UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var tableView: UITableView!
     
     var challengeService: ChallengeService!
     
+    private var pageController: UIPageViewController?
     private var imagePicker: UIImagePickerController!
     private var challenges: [Challenge] = []
     
     private var selectedChallenge: Challenge?
 
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loadChallenges()
         setupImagePicker()
+        
     }
     
     func loadChallenges() {
@@ -24,37 +31,74 @@ class ChallengeViewController: UIViewController, UITableViewDataSource, UITableV
         challengeService.findAll { (challenges) in
             self.challenges.appendContentsOf(challenges)
             self.activityIndicator.stopAnimating()
-            self.tableView.reloadData()
+            self.setupPageView()
         }
+    }
+    
+    func setupPageView() {
+        pageController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
+        
+        pageController?.delegate = self
+        pageController?.dataSource = self
+        
+        let startingViewController: CurrentChallengeViewController = viewControllerAtIndex(0)!
+        
+        let viewControllers: [UIViewController] = [startingViewController]
+        pageController?.setViewControllers(viewControllers, direction: .Forward, animated: true, completion: nil)
+        
+        self.addChildViewController(pageController!)
+        self.view.addSubview(self.pageController!.view)
+        
+        let pageViewRect = self.view.bounds
+        pageController?.view.frame = pageViewRect
+        pageController?.didMoveToParentViewController(self)
+    }
+    
+    func viewControllerAtIndex(index: Int) -> CurrentChallengeViewController? {
+        if challenges.count == 0 || index >= challenges.count {
+            return nil
+        }
+        selectedChallenge = challenges[index]
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let dataViewController = storyboard.instantiateViewControllerWithIdentifier("CurrentChallengeViewController") as! CurrentChallengeViewController
+        
+        dataViewController.challenge = selectedChallenge
+        return dataViewController
+    }
+    
+    func indexOfViewController(viewController: CurrentChallengeViewController) -> Int {
+        if let selectedChallenge: Challenge = viewController.challenge {
+            return challenges.indexOf({ challenge in challenge.id == selectedChallenge.id })!
+        } else {
+            return NSNotFound
+        }
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        var index = indexOfViewController(viewController as! CurrentChallengeViewController)
+        if index == 0 || index == NSNotFound {
+            return nil
+        }
+        index -= 1
+        return viewControllerAtIndex(index)
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+        var index = indexOfViewController(viewController as! CurrentChallengeViewController)
+        if index == NSNotFound {
+            return nil
+        }
+        index += 1
+        if index == challenges.count {
+            return nil
+        }
+        return viewControllerAtIndex(index)
     }
     
     func setupImagePicker() {
         self.imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-    }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return challenges.count
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedChallenge = challenges[indexPath.row]
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        displayImageOptions()
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCellWithIdentifier("ChallengeCell") as? ChallengeCell {
-            let challenge = challenges[indexPath.row]
-            cell.configureCell(challenge)
-            return cell
-        }
-        
-        return ChallengeCell()
     }
     
     func displayImageOptions() {

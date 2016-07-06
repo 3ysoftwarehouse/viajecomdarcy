@@ -45,31 +45,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let loadingController = displayLoading()
         if let username = usernameTextField.text, let password = passwordTextField.text {
             userService.authenticate(username, password: password, block: { (result) in
-                self.dismissLoading(loadingController)
-                self.onLoginResult(result)
+                self.onLoginResult(result, loadingController: loadingController)
             })
         } else {
             dismissLoading(loadingController)
         }
-    }
-    
-    func displayLoading() -> UIAlertController {
-        let alert = UIAlertController(title: nil, message: "Aguarde...", preferredStyle: .Alert)
-        
-        alert.view.tintColor = UIColor.blackColor()
-        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(10, 5, 50, 50)) as UIActivityIndicatorView
-        loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
-        loadingIndicator.startAnimating();
-        
-        alert.view.addSubview(loadingIndicator)
-        presentViewController(alert, animated: true, completion: nil)
-        
-        return alert
-    }
-    
-    func dismissLoading(loadingController: UIAlertController) {
-        loadingController.dismissViewControllerAnimated(false, completion: nil)
     }
     
     func validateFields() -> Bool {
@@ -87,14 +67,41 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func onLoginResult(result: User?) {
-        guard result != nil else {
-            displayError(message: "RG ou senha inválidos!")
-            return
-        }
+    func displayLoading() -> UIAlertController {
+        let alert = UIAlertController(title: nil, message: "Aguarde...", preferredStyle: .Alert)
         
-        self.goToMain()
+        alert.view.tintColor = UIColor.blackColor()
+
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(10, 5, 50, 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        loadingIndicator.startAnimating();
+        alert.view.addSubview(loadingIndicator)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+        return alert
     }
+    
+    func dismissLoading(loadingController: UIAlertController, onCompleteBlock: (() -> Void)? = nil) {
+        loadingController.dismissViewControllerAnimated(false) { 
+            if (onCompleteBlock != nil) {
+                onCompleteBlock!()
+            }
+        }
+    }
+    
+    func onLoginResult(result: User?, loadingController: UIAlertController) {
+        dismissLoading(loadingController) {
+            guard result != nil else {
+                self.displayError(message: "RG ou senha inválidos!")
+                return
+            }
+            self.goToMain()
+        }
+    }
+    
+    
 
     func goToMain() {
         self.performSegueWithIdentifier("ChallengeViewController", sender: nil)

@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Não possui uma conta? Cadastre-se aqui"; ObjectID = "79J-No-XXv"; */
+"79J-No-XXv.text" = "Não possui uma conta? Cadastre-se aqui";
+
+/* Class = "UILabel"; text = "Fonte encantada"; ObjectID = "CRc-wy-iK2"; */
+"CRc-wy-iK2.text" = "Fonte encantada";
+
+/* Class = "UILabel"; text = "Senha"; ObjectID = "FxZ-4D-MKe"; */
+"FxZ-4D-MKe.text" = "Senha";
+
+/* Class = "UIButton"; normalTitle = "Login com Facebook"; ObjectID = "JzT-z5-w55"; */
+"JzT-z5-w55.normalTitle" = "Entrar com Facebook";
+
+/* Class = "UILabel"; text = "Ache o Mickey ao redor da fonte"; ObjectID = "Oau-In-J3g"; */
+"Oau-In-J3g.text" = "Ache o Mickey ao redor da fonte";
+
+/* Class = "UIButton"; normalTitle = "Autenticar"; ObjectID = "QZi-b2-MNj"; */
+"QZi-b2-MNj.normalTitle" = "Autenticar";
+
+/* Class = "UILabel"; text = "Desafios"; ObjectID = "bzY-hm-8DW"; */
+"bzY-hm-8DW.text" = "Desafios";
+
+/* Class = "UIViewController"; title = "Desafios"; ObjectID = "eLB-A5-lij"; */
+"eLB-A5-lij.title" = "Desafios";
+
+/* Class = "UIViewController"; title = "Welcome"; ObjectID = "q0r-Gw-dvh"; */
+"q0r-Gw-dvh.title" = "Bem-vindo";
+
+/* Class = "UILabel"; text = "RG"; ObjectID = "txR-58-4hQ"; */
+"txR-58-4hQ.text" = "RG";
