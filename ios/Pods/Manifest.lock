@@ -1,18 +1,25 @@
 PODS:
   - Bolts/Tasks (1.7.0)
+  - Crashlytics (3.7.2):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - Parse (1.13.0):
     - Bolts/Tasks (~> 1.6)
   - Swinject (1.1.2)
 
 DEPENDENCIES:
+  - Crashlytics (= 3.7.2)
+  - Fabric (= 1.6.7)
   - Parse (= 1.13.0)
-  - Swinject (= 1.1.2)
+  - Swinject
 
 SPEC CHECKSUMS:
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
   Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
 
-PODFILE CHECKSUM: a66d9bbf73a6da3d1dac96d6b5324d912b26afcd
+PODFILE CHECKSUM: c72adbf2f638a93c007fdb1331d9055ec61c6f61
 
 COCOAPODS: 1.0.1

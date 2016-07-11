@@ -9,6 +9,9 @@ target 'Viaje Com Darcy' do
   
   # Infrastructure
   pod 'Swinject', '1.1.2'
+  
+  pod 'Fabric', '1.6.7'
+  pod 'Crashlytics', '3.7.2'
     
   # Parse
   pod 'Parse', '1.13.0'

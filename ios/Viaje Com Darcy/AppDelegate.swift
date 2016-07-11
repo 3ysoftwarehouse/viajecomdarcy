@@ -1,5 +1,7 @@
 import UIKit
 import Parse
+import Fabric
+import Crashlytics
 import Swinject
 
 @UIApplicationMain
@@ -9,10 +11,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var container: Container!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        initializeCrashlytics()
         initializeParse()
         initializeDependencyContainer()
         initializeStoryboard()
         return true
+    }
+    
+    func initializeCrashlytics() {
+        Fabric.with([Crashlytics.self])
     }
     
     func initializeParse() {
