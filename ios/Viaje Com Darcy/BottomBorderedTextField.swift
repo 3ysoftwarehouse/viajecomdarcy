@@ -16,8 +16,9 @@ class BottomBorderedTextField: UITextField {
         let border = CALayer()
         let borderWidth = CGFloat(1.0)
         
-        let fieldHeight = self.frame.size.height
-        let fieldWidth  = self.frame.size.width
+        let fieldSize = self.frame.size
+        let fieldHeight = fieldSize.height
+        let fieldWidth  = fieldSize.width
         
         border.borderColor = UIColor.darkGrayColor().CGColor
         
