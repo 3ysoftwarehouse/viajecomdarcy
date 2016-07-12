@@ -32,6 +32,7 @@
 		3EA10DF81D2C9D15008C636C /* ChallengeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA10DF71D2C9D15008C636C /* ChallengeCardView.swift */; };
 		3EA10DFA1D2CA0F5008C636C /* RoundedBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA10DF91D2CA0F5008C636C /* RoundedBorderedButton.swift */; };
 		3EAFC8C61D2C851100ADEB8C /* CurrentChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFC8C51D2C851100ADEB8C /* CurrentChallengeViewController.swift */; };
+		3EE5571C1D346B5F0053848E /* BottomBorderedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5571B1D346B5F0053848E /* BottomBorderedTextField.swift */; };
 		D6711C50DE824F157509A604 /* Pods_Viaje_Com_DarcyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F239BC1F54FBFFFDC7CA2AF9 /* Pods_Viaje_Com_DarcyUITests.framework */; };
 		F705DC72E534F16941EA8664 /* Pods_Viaje_Com_Darcy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C324BB6C151B9A16048663 /* Pods_Viaje_Com_Darcy.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		3EA10DF71D2C9D15008C636C /* ChallengeCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCardView.swift; sourceTree = "<group>"; };
 		3EA10DF91D2CA0F5008C636C /* RoundedBorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderedButton.swift; sourceTree = "<group>"; };
 		3EAFC8C51D2C851100ADEB8C /* CurrentChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentChallengeViewController.swift; sourceTree = "<group>"; };
+		3EE5571B1D346B5F0053848E /* BottomBorderedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBorderedTextField.swift; sourceTree = "<group>"; };
 		477521EBF6F3F4E1A37CE1A6 /* Pods-Viaje Com DarcyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B8E84777B6D490AD12BCF87 /* Pods-Viaje Com DarcyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyUITests/Pods-Viaje Com DarcyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		761629D734A645B7E0FC2B9B /* Pods-Viaje Com DarcyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com DarcyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com DarcyTests/Pods-Viaje Com DarcyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				3E78D7AD1D284CE400C29401 /* ChallengeCell.swift */,
 				3EA10DF71D2C9D15008C636C /* ChallengeCardView.swift */,
 				3EA10DF91D2CA0F5008C636C /* RoundedBorderedButton.swift */,
+				3EE5571B1D346B5F0053848E /* BottomBorderedTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E78D7A51D283F6E00C29401 /* ChallengeService.swift in Sources */,
+				3EE5571C1D346B5F0053848E /* BottomBorderedTextField.swift in Sources */,
 				3E78D7931D2810EA00C29401 /* UserParseService.swift in Sources */,
 				3E1A07391D28067D00FEE10F /* LoginViewController.swift in Sources */,
 				3E78D7AC1D284A2E00C29401 /* ParseChallengeConverter.swift in Sources */,
