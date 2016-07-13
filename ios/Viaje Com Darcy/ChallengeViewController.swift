@@ -4,6 +4,7 @@ class ChallengeViewController: UIViewController,
     UIPageViewControllerDataSource, UIPageViewControllerDelegate,
     UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var challengeService: ChallengeService!
@@ -23,7 +24,6 @@ class ChallengeViewController: UIViewController,
         
         loadChallenges()
         setupImagePicker()
-        
     }
     
     func loadChallenges() {
@@ -47,9 +47,10 @@ class ChallengeViewController: UIViewController,
         pageController?.setViewControllers(viewControllers, direction: .Forward, animated: true, completion: nil)
         
         self.addChildViewController(pageController!)
-        self.view.addSubview(self.pageController!.view)
+        containerView.addSubview(self.pageController!.view)
         
-        let pageViewRect = self.view.bounds
+        
+        let pageViewRect = containerView.bounds
         pageController?.view.frame = pageViewRect
         pageController?.didMoveToParentViewController(self)
     }

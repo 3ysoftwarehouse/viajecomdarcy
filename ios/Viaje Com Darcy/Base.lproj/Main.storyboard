@@ -176,24 +176,41 @@
                                 <rect key="frame" x="282" y="281" width="37" height="37"/>
                                 <color key="color" red="0.20000000000000001" green="0.45098039220000002" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJL-Fi-TPI">
+                                <rect key="frame" x="20" y="76" width="560" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="hfW-NV-heY" firstAttribute="top" secondItem="MJL-Fi-TPI" secondAttribute="bottom" constant="20" id="13C-YX-OUo"/>
                             <constraint firstItem="bzY-hm-8DW" firstAttribute="top" secondItem="fjZ-Fi-5Jd" secondAttribute="bottom" constant="8" id="1qP-Yr-hdA"/>
+                            <constraint firstItem="MJL-Fi-TPI" firstAttribute="top" secondItem="bzY-hm-8DW" secondAttribute="bottom" constant="8" id="AM4-9M-n1i"/>
+                            <constraint firstItem="MJL-Fi-TPI" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leadingMargin" id="Cpl-TF-dtX"/>
+                            <constraint firstItem="MJL-Fi-TPI" firstAttribute="trailing" secondItem="AXG-1e-T6T" secondAttribute="trailingMargin" id="EDm-hf-VId"/>
                             <constraint firstItem="bzY-hm-8DW" firstAttribute="centerX" secondItem="AXG-1e-T6T" secondAttribute="centerX" id="Hkv-Ub-2Ee"/>
+                            <constraint firstAttribute="trailing" secondItem="MJL-Fi-TPI" secondAttribute="trailing" constant="20" id="Yyl-YB-lOc"/>
                             <constraint firstItem="gS1-7Q-klR" firstAttribute="centerX" secondItem="AXG-1e-T6T" secondAttribute="centerX" id="cjL-qc-BEO"/>
+                            <constraint firstItem="MJL-Fi-TPI" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leading" constant="20" id="dVB-xh-LKK"/>
+                            <constraint firstItem="MJL-Fi-TPI" firstAttribute="top" secondItem="bzY-hm-8DW" secondAttribute="bottom" constant="8" id="jbm-eV-YbK"/>
                             <constraint firstItem="gS1-7Q-klR" firstAttribute="centerY" secondItem="AXG-1e-T6T" secondAttribute="centerY" id="mtH-PN-TBv"/>
                             <constraint firstItem="bzY-hm-8DW" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leadingMargin" id="ouR-lX-QQ2"/>
+                            <constraint firstItem="hfW-NV-heY" firstAttribute="top" secondItem="MJL-Fi-TPI" secondAttribute="bottom" constant="20" id="rGy-r6-wsJ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Cpl-TF-dtX"/>
+                                <exclude reference="EDm-hf-VId"/>
+                                <exclude reference="jbm-eV-YbK"/>
                                 <exclude reference="ouR-lX-QQ2"/>
+                                <exclude reference="rGy-r6-wsJ"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="NNJ-Oe-7vx"/>
                     <connections>
                         <outlet property="activityIndicator" destination="gS1-7Q-klR" id="CKd-9a-26L"/>
+                        <outlet property="containerView" destination="MJL-Fi-TPI" id="kmM-7f-QnT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUh-BS-g8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -303,6 +320,7 @@
                             <constraint firstItem="UyH-jf-1mm" firstAttribute="leading" secondItem="az3-H7-0ao" secondAttribute="leadingMargin" constant="20" id="aA1-Xi-gNb"/>
                             <constraint firstItem="UyH-jf-1mm" firstAttribute="top" secondItem="MZa-SY-RRL" secondAttribute="bottom" constant="20" id="g9X-QC-bo3"/>
                             <constraint firstItem="Y4e-h5-8L7" firstAttribute="top" secondItem="MvZ-Lu-Zoq" secondAttribute="bottom" constant="20" id="hFV-KM-Z7B"/>
+                            <constraint firstItem="Y4e-h5-8L7" firstAttribute="top" secondItem="MvZ-Lu-Zoq" secondAttribute="bottom" constant="20" id="scp-XB-2zf"/>
                             <constraint firstItem="UyH-jf-1mm" firstAttribute="leading" secondItem="az3-H7-0ao" secondAttribute="leading" constant="20" id="vsx-iK-UBz"/>
                         </constraints>
                         <variation key="default">
@@ -311,6 +329,7 @@
                                 <exclude reference="Shv-Q9-tpp"/>
                                 <exclude reference="aA1-Xi-gNb"/>
                                 <exclude reference="4Fc-cp-j1n"/>
+                                <exclude reference="hFV-KM-Z7B"/>
                             </mask>
                         </variation>
                     </view>
@@ -321,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YsA-Mz-Ozu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="-1113"/>
+            <point key="canvasLocation" x="1957" y="-1114"/>
         </scene>
     </scenes>
     <resources>
