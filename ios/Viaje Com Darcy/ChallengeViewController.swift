@@ -6,6 +6,7 @@ class ChallengeViewController: UIViewController,
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     var challengeService: ChallengeService!
     
@@ -38,6 +39,8 @@ class ChallengeViewController: UIViewController,
     func setupPageView() {
         pageController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
         
+        pageControl.numberOfPages = challenges.count
+        
         pageController?.delegate = self
         pageController?.dataSource = self
         
@@ -47,6 +50,7 @@ class ChallengeViewController: UIViewController,
         pageController?.setViewControllers(viewControllers, direction: .Forward, animated: true, completion: nil)
         
         self.addChildViewController(pageController!)
+
         containerView.addSubview(self.pageController!.view)
         
         
@@ -75,8 +79,22 @@ class ChallengeViewController: UIViewController,
         }
     }
     
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if (completed) {
+            let viewController = pageViewController.viewControllers?.first as! CurrentChallengeViewController
+            updatePageControlCurrentPage(viewController)
+        }
+    }
+    
+    func updatePageControlCurrentPage(viewController: CurrentChallengeViewController) {
+        let index = indexOfViewController(viewController)
+        pageControl.currentPage = index
+    }
+    
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         var index = indexOfViewController(viewController as! CurrentChallengeViewController)
+
         if index == 0 || index == NSNotFound {
             return nil
         }
@@ -86,6 +104,7 @@ class ChallengeViewController: UIViewController,
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         var index = indexOfViewController(viewController as! CurrentChallengeViewController)
+
         if index == NSNotFound {
             return nil
         }
@@ -94,6 +113,10 @@ class ChallengeViewController: UIViewController,
             return nil
         }
         return viewControllerAtIndex(index)
+    }
+    
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return challenges.count
     }
     
     func setupImagePicker() {

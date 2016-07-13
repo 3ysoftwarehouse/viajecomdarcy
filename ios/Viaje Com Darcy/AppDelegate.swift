@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initializeParse()
         initializeDependencyContainer()
         initializeStoryboard()
+        setupViewDefaults()
         return true
     }
     
@@ -67,6 +68,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil, container: container)
         window.rootViewController = storyboard.instantiateInitialViewController()
+    }
+    
+    func setupViewDefaults() {
+        setupPageViewControllerDefaults()
+    }
+    
+    func setupPageViewControllerDefaults() {
+        let pageControl = UIPageControl.appearance()
+        pageControl.pageIndicatorTintColor = UIColor.lightGrayColor()
+        pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
+
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -180,18 +180,36 @@
                                 <rect key="frame" x="20" y="76" width="560" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d6Z-oh-3OK">
+                                <rect key="frame" x="20" y="61" width="560" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Mwz-mj-ACm"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hfW-NV-heY" firstAttribute="top" secondItem="MJL-Fi-TPI" secondAttribute="bottom" constant="20" id="13C-YX-OUo"/>
+                            <constraint firstItem="d6Z-oh-3OK" firstAttribute="top" secondItem="fjZ-Fi-5Jd" secondAttribute="bottom" constant="41" id="1IV-Ws-hre"/>
                             <constraint firstItem="bzY-hm-8DW" firstAttribute="top" secondItem="fjZ-Fi-5Jd" secondAttribute="bottom" constant="8" id="1qP-Yr-hdA"/>
+                            <constraint firstItem="MJL-Fi-TPI" firstAttribute="top" secondItem="d6Z-oh-3OK" secondAttribute="bottom" constant="8" id="2ME-9e-Veh"/>
+                            <constraint firstItem="d6Z-oh-3OK" firstAttribute="top" secondItem="fjZ-Fi-5Jd" secondAttribute="bottom" constant="41" id="4Lx-Ob-to2"/>
+                            <constraint firstItem="d6Z-oh-3OK" firstAttribute="top" secondItem="fjZ-Fi-5Jd" secondAttribute="bottom" constant="8" id="4ln-gv-9WP"/>
+                            <constraint firstItem="d6Z-oh-3OK" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leadingMargin" id="90e-us-td9"/>
                             <constraint firstItem="MJL-Fi-TPI" firstAttribute="top" secondItem="bzY-hm-8DW" secondAttribute="bottom" constant="8" id="AM4-9M-n1i"/>
+                            <constraint firstItem="bzY-hm-8DW" firstAttribute="leading" secondItem="d6Z-oh-3OK" secondAttribute="trailing" constant="26" id="Anp-i1-WS1"/>
                             <constraint firstItem="MJL-Fi-TPI" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leadingMargin" id="Cpl-TF-dtX"/>
                             <constraint firstItem="MJL-Fi-TPI" firstAttribute="trailing" secondItem="AXG-1e-T6T" secondAttribute="trailingMargin" id="EDm-hf-VId"/>
+                            <constraint firstItem="d6Z-oh-3OK" firstAttribute="centerX" secondItem="AXG-1e-T6T" secondAttribute="centerX" id="EML-F9-8rO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d6Z-oh-3OK" secondAttribute="trailing" id="ESY-Wd-0Is"/>
                             <constraint firstItem="bzY-hm-8DW" firstAttribute="centerX" secondItem="AXG-1e-T6T" secondAttribute="centerX" id="Hkv-Ub-2Ee"/>
+                            <constraint firstItem="d6Z-oh-3OK" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leadingMargin" constant="161" id="YTP-LR-vlp"/>
                             <constraint firstAttribute="trailing" secondItem="MJL-Fi-TPI" secondAttribute="trailing" constant="20" id="Yyl-YB-lOc"/>
                             <constraint firstItem="gS1-7Q-klR" firstAttribute="centerX" secondItem="AXG-1e-T6T" secondAttribute="centerX" id="cjL-qc-BEO"/>
                             <constraint firstItem="MJL-Fi-TPI" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leading" constant="20" id="dVB-xh-LKK"/>
+                            <constraint firstItem="MJL-Fi-TPI" firstAttribute="top" secondItem="d6Z-oh-3OK" secondAttribute="bottom" constant="11" id="hO6-wf-ZlZ"/>
                             <constraint firstItem="MJL-Fi-TPI" firstAttribute="top" secondItem="bzY-hm-8DW" secondAttribute="bottom" constant="8" id="jbm-eV-YbK"/>
                             <constraint firstItem="gS1-7Q-klR" firstAttribute="centerY" secondItem="AXG-1e-T6T" secondAttribute="centerY" id="mtH-PN-TBv"/>
                             <constraint firstItem="bzY-hm-8DW" firstAttribute="leading" secondItem="AXG-1e-T6T" secondAttribute="leadingMargin" id="ouR-lX-QQ2"/>
@@ -199,9 +217,16 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="4Lx-Ob-to2"/>
+                                <exclude reference="4ln-gv-9WP"/>
+                                <exclude reference="EML-F9-8rO"/>
+                                <exclude reference="YTP-LR-vlp"/>
+                                <exclude reference="2ME-9e-Veh"/>
                                 <exclude reference="Cpl-TF-dtX"/>
                                 <exclude reference="EDm-hf-VId"/>
+                                <exclude reference="hO6-wf-ZlZ"/>
                                 <exclude reference="jbm-eV-YbK"/>
+                                <exclude reference="Anp-i1-WS1"/>
                                 <exclude reference="ouR-lX-QQ2"/>
                                 <exclude reference="rGy-r6-wsJ"/>
                             </mask>
@@ -211,6 +236,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="gS1-7Q-klR" id="CKd-9a-26L"/>
                         <outlet property="containerView" destination="MJL-Fi-TPI" id="kmM-7f-QnT"/>
+                        <outlet property="pageControl" destination="d6Z-oh-3OK" id="lZL-n0-DoK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUh-BS-g8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
