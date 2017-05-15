@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D37FC7C1E9EECCC007888F5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D37FC7A1E9EECCC007888F5 /* SWRevealViewController.m */; };
+		3D37FC7E1E9EF2CE007888F5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D37FC7D1E9EF2CE007888F5 /* MenuViewController.swift */; };
+		3D8B427E1E5279F300751170 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8B427D1E5279F300751170 /* Login.storyboard */; };
+		3D8B42821E527B2A00751170 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B42811E527B2A00751170 /* LoginViewController.swift */; };
+		3D8B428A1E527EDF00751170 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8B42891E527EDF00751170 /* SignUp.storyboard */; };
+		3D8B428C1E527F2C00751170 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B428B1E527F2C00751170 /* SignUpViewController.swift */; };
+		3D8B42921E5281DC00751170 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B42911E5281DC00751170 /* SplashViewController.swift */; };
+		3D8B42951E52852E00751170 /* StringsScreen.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D8B42941E52852E00751170 /* StringsScreen.plist */; };
+		3D8B42991E52888A00751170 /* UIView+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B42971E52888A00751170 /* UIView+IB.swift */; };
+		3D8B429A1E52888A00751170 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8B42981E52888A00751170 /* UIView+Nib.swift */; };
+		3D8B429E1E5290A900751170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8B429D1E5290A900751170 /* LaunchScreen.storyboard */; };
+		3D8B42A41E52938A00751170 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8B42A31E52938A00751170 /* Splash.storyboard */; };
+		3DD458C31E4D3A9E0030583E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD458C21E4D3A9E0030583E /* AppDelegate.swift */; };
+		3DEA7BA31E9DB4FF005EA719 /* Desafios.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA7BA21E9DB4FF005EA719 /* Desafios.storyboard */; };
+		3DEA7BA51E9DB552005EA719 /* DesafiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA7BA41E9DB552005EA719 /* DesafiosViewController.swift */; };
+		3DEA7BAE1E9DBAE7005EA719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA7BAD1E9DBAE7005EA719 /* Assets.xcassets */; };
+		5B068655C144946625A2DB57 /* Pods_Viaje_Com_Darcy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749CF071A57A865E554904E0 /* Pods_Viaje_Com_Darcy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B68D04B57CA2BB537B158C6 /* Pods-Viaje Com Darcy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com Darcy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy.debug.xcconfig"; sourceTree = "<group>"; };
+		3D37FC791E9EECCC007888F5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = view/components/customer/SWRevealViewController.h; sourceTree = "<group>"; };
+		3D37FC7A1E9EECCC007888F5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = view/components/customer/SWRevealViewController.m; sourceTree = "<group>"; };
+		3D37FC7B1E9EECCC007888F5 /* Viaje Com Darcy-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Viaje Com Darcy-Bridging-Header.h"; path = "view/components/customer/Viaje Com Darcy-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D37FC7D1E9EF2CE007888F5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = controller/MenuViewController.swift; sourceTree = "<group>"; };
+		3D8B427D1E5279F300751170 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = view/storyboard/Login.storyboard; sourceTree = "<group>"; };
+		3D8B42811E527B2A00751170 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = controller/LoginViewController.swift; sourceTree = "<group>"; };
+		3D8B42891E527EDF00751170 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SignUp.storyboard; path = view/storyboard/SignUp.storyboard; sourceTree = "<group>"; };
+		3D8B428B1E527F2C00751170 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = controller/SignUpViewController.swift; sourceTree = "<group>"; };
+		3D8B42911E5281DC00751170 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashViewController.swift; path = controller/SplashViewController.swift; sourceTree = "<group>"; };
+		3D8B42941E52852E00751170 /* StringsScreen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StringsScreen.plist; path = resource/StringsScreen.plist; sourceTree = "<group>"; };
+		3D8B42971E52888A00751170 /* UIView+IB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+IB.swift"; path = "view/components/customer/UIView+IB.swift"; sourceTree = "<group>"; };
+		3D8B42981E52888A00751170 /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Nib.swift"; path = "view/components/customer/UIView+Nib.swift"; sourceTree = "<group>"; };
+		3D8B429D1E5290A900751170 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D8B42A31E52938A00751170 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Splash.storyboard; path = view/storyboard/Splash.storyboard; sourceTree = "<group>"; };
+		3DD458BF1E4D3A9E0030583E /* Viaje Com Darcy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viaje Com Darcy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD458C21E4D3A9E0030583E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DD458CE1E4D3A9E0030583E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEA7BA21E9DB4FF005EA719 /* Desafios.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Desafios.storyboard; path = view/storyboard/Desafios.storyboard; sourceTree = "<group>"; };
+		3DEA7BA41E9DB552005EA719 /* DesafiosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesafiosViewController.swift; path = controller/DesafiosViewController.swift; sourceTree = "<group>"; };
+		3DEA7BAD1E9DBAE7005EA719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		749CF071A57A865E554904E0 /* Pods_Viaje_Com_Darcy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viaje_Com_Darcy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B88CB17ACDC66EE93FD48E5 /* Pods-Viaje Com Darcy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viaje Com Darcy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DD458BC1E4D3A9E0030583E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B068655C144946625A2DB57 /* Pods_Viaje_Com_Darcy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D8B42751E52776000751170 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		3D8B42761E52777900751170 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3D8B42791E52783E00751170 /* components */,
+				3D8B42781E52782500751170 /* storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		3D8B42771E52778700751170 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D8B427A1E5278FA00751170 /* service */,
+				3D8B42811E527B2A00751170 /* LoginViewController.swift */,
+				3D8B428B1E527F2C00751170 /* SignUpViewController.swift */,
+				3D8B42911E5281DC00751170 /* SplashViewController.swift */,
+				3DEA7BA41E9DB552005EA719 /* DesafiosViewController.swift */,
+				3D37FC7D1E9EF2CE007888F5 /* MenuViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		3D8B42781E52782500751170 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3D8B427D1E5279F300751170 /* Login.storyboard */,
+				3D8B42891E527EDF00751170 /* SignUp.storyboard */,
+				3D8B42A31E52938A00751170 /* Splash.storyboard */,
+				3DEA7BA21E9DB4FF005EA719 /* Desafios.storyboard */,
+			);
+			name = storyboard;
+			sourceTree = "<group>";
+		};
+		3D8B42791E52783E00751170 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				3D8B42961E52887C00751170 /* customer */,
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
+		3D8B427A1E5278FA00751170 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		3D8B42931E52848600751170 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				3D8B42941E52852E00751170 /* StringsScreen.plist */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		3D8B42961E52887C00751170 /* customer */ = {
+			isa = PBXGroup;
+			children = (
+				3D37FC791E9EECCC007888F5 /* SWRevealViewController.h */,
+				3D37FC7A1E9EECCC007888F5 /* SWRevealViewController.m */,
+				3D37FC7B1E9EECCC007888F5 /* Viaje Com Darcy-Bridging-Header.h */,
+				3D8B42971E52888A00751170 /* UIView+IB.swift */,
+				3D8B42981E52888A00751170 /* UIView+Nib.swift */,
+			);
+			name = customer;
+			sourceTree = "<group>";
+		};
+		3DD458B61E4D3A9E0030583E = {
+			isa = PBXGroup;
+			children = (
+				3DD458C11E4D3A9E0030583E /* Viaje Com Darcy */,
+				3DD458C01E4D3A9E0030583E /* Products */,
+				B289FF4B5A83170F91EB2C43 /* Pods */,
+				6EF88AC95F715495FF79F112 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DD458C01E4D3A9E0030583E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DD458BF1E4D3A9E0030583E /* Viaje Com Darcy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DD458C11E4D3A9E0030583E /* Viaje Com Darcy */ = {
+			isa = PBXGroup;
+			children = (
+				3D8B42931E52848600751170 /* resource */,
+				3D8B42771E52778700751170 /* controller */,
+				3D8B42761E52777900751170 /* view */,
+				3D8B42751E52776000751170 /* model */,
+				3DD458C21E4D3A9E0030583E /* AppDelegate.swift */,
+				3DD458CE1E4D3A9E0030583E /* Info.plist */,
+				3D8B429D1E5290A900751170 /* LaunchScreen.storyboard */,
+				3DEA7BAD1E9DBAE7005EA719 /* Assets.xcassets */,
+			);
+			path = "Viaje Com Darcy";
+			sourceTree = "<group>";
+		};
+		6EF88AC95F715495FF79F112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				749CF071A57A865E554904E0 /* Pods_Viaje_Com_Darcy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B289FF4B5A83170F91EB2C43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B68D04B57CA2BB537B158C6 /* Pods-Viaje Com Darcy.debug.xcconfig */,
+				8B88CB17ACDC66EE93FD48E5 /* Pods-Viaje Com Darcy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DD458BE1E4D3A9E0030583E /* Viaje Com Darcy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD458D11E4D3A9E0030583E /* Build configuration list for PBXNativeTarget "Viaje Com Darcy" */;
+			buildPhases = (
+				880761A24CCF6830A3D0769D /* [CP] Check Pods Manifest.lock */,
+				3DD458BB1E4D3A9E0030583E /* Sources */,
+				3DD458BC1E4D3A9E0030583E /* Frameworks */,
+				3DD458BD1E4D3A9E0030583E /* Resources */,
+				87574F5369C6E00B32F31E3A /* [CP] Embed Pods Frameworks */,
+				BD630973B11EBAE40B709804 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viaje Com Darcy";
+			productName = "Viaje Com Darcy";
+			productReference = 3DD458BF1E4D3A9E0030583E /* Viaje Com Darcy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DD458B71E4D3A9E0030583E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Viaje Com Darcy";
+				TargetAttributes = {
+					3DD458BE1E4D3A9E0030583E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = D6274YP8V3;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3DD458BA1E4D3A9E0030583E /* Build configuration list for PBXProject "Viaje Com Darcy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DD458B61E4D3A9E0030583E;
+			productRefGroup = 3DD458C01E4D3A9E0030583E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DD458BE1E4D3A9E0030583E /* Viaje Com Darcy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DD458BD1E4D3A9E0030583E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEA7BA31E9DB4FF005EA719 /* Desafios.storyboard in Resources */,
+				3D8B42951E52852E00751170 /* StringsScreen.plist in Resources */,
+				3D8B428A1E527EDF00751170 /* SignUp.storyboard in Resources */,
+				3D8B429E1E5290A900751170 /* LaunchScreen.storyboard in Resources */,
+				3D8B427E1E5279F300751170 /* Login.storyboard in Resources */,
+				3DEA7BAE1E9DBAE7005EA719 /* Assets.xcassets in Resources */,
+				3D8B42A41E52938A00751170 /* Splash.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87574F5369C6E00B32F31E3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		880761A24CCF6830A3D0769D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD630973B11EBAE40B709804 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD458BB1E4D3A9E0030583E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D8B428C1E527F2C00751170 /* SignUpViewController.swift in Sources */,
+				3D37FC7E1E9EF2CE007888F5 /* MenuViewController.swift in Sources */,
+				3D8B42821E527B2A00751170 /* LoginViewController.swift in Sources */,
+				3D8B429A1E52888A00751170 /* UIView+Nib.swift in Sources */,
+				3DD458C31E4D3A9E0030583E /* AppDelegate.swift in Sources */,
+				3DEA7BA51E9DB552005EA719 /* DesafiosViewController.swift in Sources */,
+				3D37FC7C1E9EECCC007888F5 /* SWRevealViewController.m in Sources */,
+				3D8B42921E5281DC00751170 /* SplashViewController.swift in Sources */,
+				3D8B42991E52888A00751170 /* UIView+IB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3DD458CF1E4D3A9E0030583E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DD458D01E4D3A9E0030583E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DD458D21E4D3A9E0030583E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B68D04B57CA2BB537B158C6 /* Pods-Viaje Com Darcy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D6274YP8V3;
+				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.viajecomdarcy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Viaje Com Darcy/view/components/customer/Viaje Com Darcy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3DD458D31E4D3A9E0030583E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B88CB17ACDC66EE93FD48E5 /* Pods-Viaje Com Darcy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D6274YP8V3;
+				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.viajecomdarcy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Viaje Com Darcy/view/components/customer/Viaje Com Darcy-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DD458BA1E4D3A9E0030583E /* Build configuration list for PBXProject "Viaje Com Darcy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD458CF1E4D3A9E0030583E /* Debug */,
+				3DD458D01E4D3A9E0030583E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD458D11E4D3A9E0030583E /* Build configuration list for PBXNativeTarget "Viaje Com Darcy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD458D21E4D3A9E0030583E /* Debug */,
+				3DD458D31E4D3A9E0030583E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DD458B71E4D3A9E0030583E /* Project object */;
+}

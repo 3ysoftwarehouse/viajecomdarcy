@@ -341,7 +341,7 @@
 				TargetAttributes = {
 					3E674B161D1B79B2009716CC = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 374A8G3HQ2;
+						DevelopmentTeam = D6274YP8V3;
 					};
 					3E674B2E1D1B79B2009716CC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -694,6 +694,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D6274YP8V3;
 				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.viajecomdarcy;
@@ -709,6 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = D6274YP8V3;
 				INFOPLIST_FILE = "Viaje Com Darcy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.viajecomdarcy;

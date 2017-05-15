@@ -11,7 +11,7 @@ DEPENDENCIES:
   - Crashlytics (= 3.7.2)
   - Fabric (= 1.6.7)
   - Parse (= 1.13.0)
-  - Swinject
+  - Swinject (= 1.1.2)
 
 SPEC CHECKSUMS:
   Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
@@ -20,6 +20,6 @@ SPEC CHECKSUMS:
   Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
   Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
 
-PODFILE CHECKSUM: c72adbf2f638a93c007fdb1331d9055ec61c6f61
+PODFILE CHECKSUM: 63c639f180aed9a334bb888de3e7df51fbe3d5ec
 
 COCOAPODS: 1.0.1

@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC1D251365AD1D9999543E6ADDE901 /* Timeline.swift */; };
+		11F68A36D34B3F02E287CD8F5EA8A865 /* SwiftCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD84F52ADEEA7FC9225D28DC709E71F /* SwiftCarousel-dummy.m */; };
+		137DC7A8D17721AB62930DE4F471BF3D /* SwiftCarousel+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC15C2A974A5C74CF88D0527B7D179 /* SwiftCarousel+UIScrollViewDelegate.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55FD04CADA749CE5A4BC0054D803DE56 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30E27AF0140BD4FA9B21F77170DA4989 /* SwiftCarouselDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6629F0874D5B33C55C44FD14045207EB /* SwiftCarouselDelegate.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13043080BF6AA18EA2B8CF0E9A4E3608 /* TaskDelegate.swift */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42A7954A516B29A7A7172E7F4373C6 /* Request.swift */; };
+		5735036E3281F97301F838FE30B04025 /* SwiftCarouselError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FE136F2C9B3F91A4078E0AA83AAEF1 /* SwiftCarouselError.swift */; };
+		58E720CA03C2DE6BF6362D7D4B3B1B7F /* SwiftCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A17EAB174481C87092B99FF7804F9BB0 /* SwiftCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A51FDA26466A5E2EE4F4FC2359852C /* DispatchQueue+Alamofire.swift */; };
+		6244DCEF0E510BE65B3377FD30CD9020 /* SwiftCarouselScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F3700EEE5FED2182C093F25930257 /* SwiftCarouselScroll.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C132321926F963BD36A09F280391057E /* ServerTrustPolicy.swift */; };
+		72F4C1960651004765F45E8676955353 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		75C9B5C7F565810BD5F8BF871FA22E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822C52534E147EA8CA42B985D5F148E7 /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153088E11810085612753896BF24A8E /* Result.swift */; };
+		9ECF53E017C81FBC977692F70C52DACE /* SwiftCarousel+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAEB3312FB9B728504B64BC980AD1A1 /* SwiftCarousel+UIGestureRecognizerDelegate.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A0B1F99CB1CC3A5FBDDD840A569C99 /* AFError.swift */; };
+		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B684E0C2D7120C535B69DB3DF496E5 /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE31C48524E673D2713D7B5008F70A7D /* Alamofire-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3D6EFD00DDE2ECE4CB24557E8F1017 /* SessionManager.swift */; };
+		B139BA6C90C891F58A8B316F9BA7303F /* UIView+SwiftCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FE6B2E4BC30BCDA61BD1A9E2F73ABA /* UIView+SwiftCarousel.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CA36FC289ED92164CDBF2FC0D27BB /* MultipartFormData.swift */; };
+		B789FA0E1202B4C248F77170757EC0BB /* SwiftCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74822B8D05017D90684B228D45703DB5 /* SwiftCarousel.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD8BFBCBCB4A31AAE1EF54CDACD18B /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F89CA22FD36DA0ADEE733112C5293F /* ParameterEncoding.swift */; };
+		C3ADBF82BD1735FFC4E512FFC74D5A65 /* Pods-Viaje Com Darcy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1FF162E246FCF3A9A38274A72EBE9 /* Pods-Viaje Com Darcy-dummy.m */; };
+		C4E53C6297629448B60F0C5F37011D07 /* Pods-Viaje Com Darcy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3406CC67C893A8E73AACCFC62BAE295 /* Pods-Viaje Com Darcy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2881AEABDCD5CB2FA5006E4AF5C6738 /* Response.swift */; };
+		EF6145CEC348FA46AB2322DC71D858AE /* SwiftCarouselResizeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA390481A91BBF634CCBD15BF20D27B /* SwiftCarouselResizeType.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B449363D2A445C64657A19055A82EF /* Notifications.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB49E42D4D8FD8FAECCB5696D95931C6 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02570930EDBF10EFCC2594A020F631EA /* Alamofire.swift */; };
+		FE93D0749B847DE99939C0FE406ABE35 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A0152AE5354530BD24F123D393E8B3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 148130866228BFA36CCB1F3C4F2DE7E3;
+			remoteInfo = SwiftCarousel;
+		};
+		D13F4181CDC2D117CA6D1C9DE9AC1E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02570930EDBF10EFCC2594A020F631EA /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		0DC5F4F90B11043B6FE527B1A36BE8EB /* Pods-Viaje Com Darcy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Viaje Com Darcy-resources.sh"; sourceTree = "<group>"; };
+		1153088E11810085612753896BF24A8E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		128444EDE219972717B37EC823FB0497 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13043080BF6AA18EA2B8CF0E9A4E3608 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		28CABD60E5447ED0F4CA162FB6418249 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EAEB3312FB9B728504B64BC980AD1A1 /* SwiftCarousel+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftCarousel+UIGestureRecognizerDelegate.swift"; path = "Source/SwiftCarousel+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		34B684E0C2D7120C535B69DB3DF496E5 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		43A51FDA26466A5E2EE4F4FC2359852C /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		43B4753E963E8F93685C00B1A6976A52 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA390481A91BBF634CCBD15BF20D27B /* SwiftCarouselResizeType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftCarouselResizeType.swift; path = Source/SwiftCarouselResizeType.swift; sourceTree = "<group>"; };
+		51A5AFE202A3910A01747A33742993E3 /* Pods-Viaje Com Darcy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Viaje Com Darcy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		522C9C00DFD04B6FB7040854E23FB942 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55FD04CADA749CE5A4BC0054D803DE56 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		56D1FF162E246FCF3A9A38274A72EBE9 /* Pods-Viaje Com Darcy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Viaje Com Darcy-dummy.m"; sourceTree = "<group>"; };
+		56F89CA22FD36DA0ADEE733112C5293F /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		59FE6B2E4BC30BCDA61BD1A9E2F73ABA /* UIView+SwiftCarousel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SwiftCarousel.swift"; path = "Source/UIView+SwiftCarousel.swift"; sourceTree = "<group>"; };
+		5CD84F52ADEEA7FC9225D28DC709E71F /* SwiftCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCarousel-dummy.m"; sourceTree = "<group>"; };
+		5F3D6EFD00DDE2ECE4CB24557E8F1017 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		5F6CA36FC289ED92164CDBF2FC0D27BB /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		5F8F29BBCFDF50C8CE0C6DD108DF6C24 /* Pods_Viaje_Com_Darcy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Viaje_Com_Darcy.framework; path = "Pods-Viaje Com Darcy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6182BB99C1C13164C46520669ED7F80F /* Pods-Viaje Com Darcy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Viaje Com Darcy.modulemap"; sourceTree = "<group>"; };
+		637DDD1A6EC64A46FC665E726170345D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		6629F0874D5B33C55C44FD14045207EB /* SwiftCarouselDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftCarouselDelegate.swift; path = Source/SwiftCarouselDelegate.swift; sourceTree = "<group>"; };
+		74822B8D05017D90684B228D45703DB5 /* SwiftCarousel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftCarousel.swift; path = Source/SwiftCarousel.swift; sourceTree = "<group>"; };
+		7A0F3700EEE5FED2182C093F25930257 /* SwiftCarouselScroll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftCarouselScroll.swift; path = Source/SwiftCarouselScroll.swift; sourceTree = "<group>"; };
+		7B7FD71AA056D6D3BE9A0C89158DD3CD /* Pods-Viaje Com Darcy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Viaje Com Darcy.release.xcconfig"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		81FD8BFBCBCB4A31AAE1EF54CDACD18B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		822C52534E147EA8CA42B985D5F148E7 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		82CC1D251365AD1D9999543E6ADDE901 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		88C8350AD6C2AE00BAC77FECEB06348A /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B449363D2A445C64657A19055A82EF /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		A17EAB174481C87092B99FF7804F9BB0 /* SwiftCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCarousel-umbrella.h"; sourceTree = "<group>"; };
+		A3112A1CEE28F14B18FBA78219504C54 /* SwiftCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftCarousel.framework; path = SwiftCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A0B1F99CB1CC3A5FBDDD840A569C99 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		A6018AFD718F8DE80B9CAD6D9130A7C9 /* SwiftCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCarousel.xcconfig; sourceTree = "<group>"; };
+		B2881AEABDCD5CB2FA5006E4AF5C6738 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		B3406CC67C893A8E73AACCFC62BAE295 /* Pods-Viaje Com Darcy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Viaje Com Darcy-umbrella.h"; sourceTree = "<group>"; };
+		B386AA3AEC398A8D45BB248BC18B65DA /* Pods-Viaje Com Darcy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Viaje Com Darcy.debug.xcconfig"; sourceTree = "<group>"; };
+		BE42A7954A516B29A7A7172E7F4373C6 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		C132321926F963BD36A09F280391057E /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		C682D40F0930C1DC2FDE1649A14F6D14 /* Pods-Viaje Com Darcy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Viaje Com Darcy-frameworks.sh"; sourceTree = "<group>"; };
+		CC2F3AC39914F522C000743AA3557686 /* SwiftCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCarousel-prefix.pch"; sourceTree = "<group>"; };
+		D9FE136F2C9B3F91A4078E0AA83AAEF1 /* SwiftCarouselError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftCarouselError.swift; path = Source/SwiftCarouselError.swift; sourceTree = "<group>"; };
+		E529ED49F8F68F7B532CDCEFD0EBD7ED /* Pods-Viaje Com Darcy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Viaje Com Darcy-acknowledgements.plist"; sourceTree = "<group>"; };
+		EB49E42D4D8FD8FAECCB5696D95931C6 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		EE31C48524E673D2713D7B5008F70A7D /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		F0D91452C34255F27A9CE325883F379E /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F3FC15C2A974A5C74CF88D0527B7D179 /* SwiftCarousel+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftCarousel+UIScrollViewDelegate.swift"; path = "Source/SwiftCarousel+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		FA2E8081F835C33C5931759006CA40D4 /* SwiftCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftCarousel.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E7FC91E2CDD8507876EB9B765910605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F4C1960651004765F45E8676955353 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8748EC30432E55C99915F84D42A4CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C9B5C7F565810BD5F8BF871FA22E82 /* Foundation.framework in Frameworks */,
+				FE93D0749B847DE99939C0FE406ABE35 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0422B05FFD7776359E5F902BB7CC6922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				128444EDE219972717B37EC823FB0497 /* Alamofire.framework */,
+				5F8F29BBCFDF50C8CE0C6DD108DF6C24 /* Pods_Viaje_Com_Darcy.framework */,
+				A3112A1CEE28F14B18FBA78219504C54 /* SwiftCarousel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC215227A6A547C759E48CBF6CA248E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0D91452C34255F27A9CE325883F379E /* Alamofire.modulemap */,
+				88C8350AD6C2AE00BAC77FECEB06348A /* Alamofire.xcconfig */,
+				EE31C48524E673D2713D7B5008F70A7D /* Alamofire-dummy.m */,
+				637DDD1A6EC64A46FC665E726170345D /* Alamofire-prefix.pch */,
+				55FD04CADA749CE5A4BC0054D803DE56 /* Alamofire-umbrella.h */,
+				43B4753E963E8F93685C00B1A6976A52 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		3F869B4D8F3983464C63F7F510BCFD1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28CABD60E5447ED0F4CA162FB6418249 /* Info.plist */,
+				FA2E8081F835C33C5931759006CA40D4 /* SwiftCarousel.modulemap */,
+				A6018AFD718F8DE80B9CAD6D9130A7C9 /* SwiftCarousel.xcconfig */,
+				5CD84F52ADEEA7FC9225D28DC709E71F /* SwiftCarousel-dummy.m */,
+				CC2F3AC39914F522C000743AA3557686 /* SwiftCarousel-prefix.pch */,
+				A17EAB174481C87092B99FF7804F9BB0 /* SwiftCarousel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftCarousel";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CA4482DBB4ED6927AF748644CF9D6DE /* Pods-Viaje Com Darcy */ = {
+			isa = PBXGroup;
+			children = (
+				522C9C00DFD04B6FB7040854E23FB942 /* Info.plist */,
+				6182BB99C1C13164C46520669ED7F80F /* Pods-Viaje Com Darcy.modulemap */,
+				51A5AFE202A3910A01747A33742993E3 /* Pods-Viaje Com Darcy-acknowledgements.markdown */,
+				E529ED49F8F68F7B532CDCEFD0EBD7ED /* Pods-Viaje Com Darcy-acknowledgements.plist */,
+				56D1FF162E246FCF3A9A38274A72EBE9 /* Pods-Viaje Com Darcy-dummy.m */,
+				C682D40F0930C1DC2FDE1649A14F6D14 /* Pods-Viaje Com Darcy-frameworks.sh */,
+				0DC5F4F90B11043B6FE527B1A36BE8EB /* Pods-Viaje Com Darcy-resources.sh */,
+				B3406CC67C893A8E73AACCFC62BAE295 /* Pods-Viaje Com Darcy-umbrella.h */,
+				B386AA3AEC398A8D45BB248BC18B65DA /* Pods-Viaje Com Darcy.debug.xcconfig */,
+				7B7FD71AA056D6D3BE9A0C89158DD3CD /* Pods-Viaje Com Darcy.release.xcconfig */,
+			);
+			name = "Pods-Viaje Com Darcy";
+			path = "Target Support Files/Pods-Viaje Com Darcy";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				AD6E3AD2E644018E6814537422900FDB /* Pods */,
+				0422B05FFD7776359E5F902BB7CC6922 /* Products */,
+				C42DA8C0B6FB26440317210CDBAD856D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A244AB5B53F878AC4A4EB03D0B86EB71 /* SwiftCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				74822B8D05017D90684B228D45703DB5 /* SwiftCarousel.swift */,
+				2EAEB3312FB9B728504B64BC980AD1A1 /* SwiftCarousel+UIGestureRecognizerDelegate.swift */,
+				F3FC15C2A974A5C74CF88D0527B7D179 /* SwiftCarousel+UIScrollViewDelegate.swift */,
+				6629F0874D5B33C55C44FD14045207EB /* SwiftCarouselDelegate.swift */,
+				D9FE136F2C9B3F91A4078E0AA83AAEF1 /* SwiftCarouselError.swift */,
+				4DA390481A91BBF634CCBD15BF20D27B /* SwiftCarouselResizeType.swift */,
+				7A0F3700EEE5FED2182C093F25930257 /* SwiftCarouselScroll.swift */,
+				59FE6B2E4BC30BCDA61BD1A9E2F73ABA /* UIView+SwiftCarousel.swift */,
+				3F869B4D8F3983464C63F7F510BCFD1B /* Support Files */,
+			);
+			name = SwiftCarousel;
+			path = SwiftCarousel;
+			sourceTree = "<group>";
+		};
+		AD6E3AD2E644018E6814537422900FDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B4FF40B631A9A4A40EDC03293F271 /* Alamofire */,
+				A244AB5B53F878AC4A4EB03D0B86EB71 /* SwiftCarousel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C42DA8C0B6FB26440317210CDBAD856D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA4482DBB4ED6927AF748644CF9D6DE /* Pods-Viaje Com Darcy */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CE7B4FF40B631A9A4A40EDC03293F271 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				A5A0B1F99CB1CC3A5FBDDD840A569C99 /* AFError.swift */,
+				02570930EDBF10EFCC2594A020F631EA /* Alamofire.swift */,
+				43A51FDA26466A5E2EE4F4FC2359852C /* DispatchQueue+Alamofire.swift */,
+				5F6CA36FC289ED92164CDBF2FC0D27BB /* MultipartFormData.swift */,
+				34B684E0C2D7120C535B69DB3DF496E5 /* NetworkReachabilityManager.swift */,
+				A0B449363D2A445C64657A19055A82EF /* Notifications.swift */,
+				56F89CA22FD36DA0ADEE733112C5293F /* ParameterEncoding.swift */,
+				BE42A7954A516B29A7A7172E7F4373C6 /* Request.swift */,
+				B2881AEABDCD5CB2FA5006E4AF5C6738 /* Response.swift */,
+				EB49E42D4D8FD8FAECCB5696D95931C6 /* ResponseSerialization.swift */,
+				1153088E11810085612753896BF24A8E /* Result.swift */,
+				C132321926F963BD36A09F280391057E /* ServerTrustPolicy.swift */,
+				822C52534E147EA8CA42B985D5F148E7 /* SessionDelegate.swift */,
+				5F3D6EFD00DDE2ECE4CB24557E8F1017 /* SessionManager.swift */,
+				13043080BF6AA18EA2B8CF0E9A4E3608 /* TaskDelegate.swift */,
+				82CC1D251365AD1D9999543E6ADDE901 /* Timeline.swift */,
+				81FD8BFBCBCB4A31AAE1EF54CDACD18B /* Validation.swift */,
+				3BC215227A6A547C759E48CBF6CA248E /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9E25AF4B4FB89919AF7980D70A4304F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E53C6297629448B60F0C5F37011D07 /* Pods-Viaje Com Darcy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAD7F6E621A69F070AABCA2E9AB91EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E720CA03C2DE6BF6362D7D4B3B1B7F /* SwiftCarousel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		148130866228BFA36CCB1F3C4F2DE7E3 /* SwiftCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4187A351191BF57ADC1EA4F523683E6 /* Build configuration list for PBXNativeTarget "SwiftCarousel" */;
+			buildPhases = (
+				9A55E62BFB504C13BFCF8E90E691A8BD /* Sources */,
+				BE8748EC30432E55C99915F84D42A4CF /* Frameworks */,
+				DEAD7F6E621A69F070AABCA2E9AB91EF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCarousel;
+			productName = SwiftCarousel;
+			productReference = A3112A1CEE28F14B18FBA78219504C54 /* SwiftCarousel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		431CB916080C027902A5BC43940B31FE /* Pods-Viaje Com Darcy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E574823DF5ED12A3769769D252A282 /* Build configuration list for PBXNativeTarget "Pods-Viaje Com Darcy" */;
+			buildPhases = (
+				903550281A154176C88B13D24D96DAA0 /* Sources */,
+				5E7FC91E2CDD8507876EB9B765910605 /* Frameworks */,
+				9E25AF4B4FB89919AF7980D70A4304F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BBFA4B960FCF0A0054B9D8C154CB531 /* PBXTargetDependency */,
+				362A1819CDAA5F8F0C9B2CB39E2EA0E4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Viaje Com Darcy";
+			productName = "Pods-Viaje Com Darcy";
+			productReference = 5F8F29BBCFDF50C8CE0C6DD108DF6C24 /* Pods_Viaje_Com_Darcy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				32B9974868188C4803318E36329C87FE /* Sources */,
+				99195E4207764744AEC07ECCBCD550EB /* Frameworks */,
+				B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 128444EDE219972717B37EC823FB0497 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0422B05FFD7776359E5F902BB7CC6922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				431CB916080C027902A5BC43940B31FE /* Pods-Viaje Com Darcy */,
+				148130866228BFA36CCB1F3C4F2DE7E3 /* SwiftCarousel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B9974868188C4803318E36329C87FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
+				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
+				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
+				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
+				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
+				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
+				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
+				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
+				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
+				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
+				3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */,
+				10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */,
+				BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903550281A154176C88B13D24D96DAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3ADBF82BD1735FFC4E512FFC74D5A65 /* Pods-Viaje Com Darcy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A55E62BFB504C13BFCF8E90E691A8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ECF53E017C81FBC977692F70C52DACE /* SwiftCarousel+UIGestureRecognizerDelegate.swift in Sources */,
+				137DC7A8D17721AB62930DE4F471BF3D /* SwiftCarousel+UIScrollViewDelegate.swift in Sources */,
+				11F68A36D34B3F02E287CD8F5EA8A865 /* SwiftCarousel-dummy.m in Sources */,
+				B789FA0E1202B4C248F77170757EC0BB /* SwiftCarousel.swift in Sources */,
+				30E27AF0140BD4FA9B21F77170DA4989 /* SwiftCarouselDelegate.swift in Sources */,
+				5735036E3281F97301F838FE30B04025 /* SwiftCarouselError.swift in Sources */,
+				EF6145CEC348FA46AB2322DC71D858AE /* SwiftCarouselResizeType.swift in Sources */,
+				6244DCEF0E510BE65B3377FD30CD9020 /* SwiftCarouselScroll.swift in Sources */,
+				B139BA6C90C891F58A8B316F9BA7303F /* UIView+SwiftCarousel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		362A1819CDAA5F8F0C9B2CB39E2EA0E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftCarousel;
+			target = 148130866228BFA36CCB1F3C4F2DE7E3 /* SwiftCarousel */;
+			targetProxy = 2A0152AE5354530BD24F123D393E8B3E /* PBXContainerItemProxy */;
+		};
+		5BBFA4B960FCF0A0054B9D8C154CB531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = D13F4181CDC2D117CA6D1C9DE9AC1E59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A29B6F510198AF64EFD762EF6FA97A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C8350AD6C2AE00BAC77FECEB06348A /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D6FB3598D39C8643A5A3B0D10F18257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7FD71AA056D6D3BE9A0C89158DD3CD /* Pods-Viaje Com Darcy.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Viaje Com Darcy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Viaje_Com_Darcy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5188E58D25AFFBD22225F4D4C830A969 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6018AFD718F8DE80B9CAD6D9130A7C9 /* SwiftCarousel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCarousel/SwiftCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCarousel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftCarousel/SwiftCarousel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		780B509975CF82626ACFF073CBB5BF22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6018AFD718F8DE80B9CAD6D9130A7C9 /* SwiftCarousel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCarousel/SwiftCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCarousel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftCarousel/SwiftCarousel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3FE1BD9EBB4CC5A0DF694EE0A0049D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B386AA3AEC398A8D45BB248BC18B65DA /* Pods-Viaje Com Darcy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Viaje Com Darcy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Viaje Com Darcy/Pods-Viaje Com Darcy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Viaje_Com_Darcy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F383079BFBF927813EA3613CFB679FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C8350AD6C2AE00BAC77FECEB06348A /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E574823DF5ED12A3769769D252A282 /* Build configuration list for PBXNativeTarget "Pods-Viaje Com Darcy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FE1BD9EBB4CC5A0DF694EE0A0049D8 /* Debug */,
+				3D6FB3598D39C8643A5A3B0D10F18257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F383079BFBF927813EA3613CFB679FDE /* Debug */,
+				0A29B6F510198AF64EFD762EF6FA97A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4187A351191BF57ADC1EA4F523683E6 /* Build configuration list for PBXNativeTarget "SwiftCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780B509975CF82626ACFF073CBB5BF22 /* Debug */,
+				5188E58D25AFFBD22225F4D4C830A969 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

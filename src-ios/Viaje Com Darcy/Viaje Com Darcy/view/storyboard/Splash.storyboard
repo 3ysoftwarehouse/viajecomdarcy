@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iea-6U-245">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Rei-Nl-TZn">
+            <objects>
+                <viewController id="Gtr-Mm-vI6" customClass="SplashViewController" customModule="Viaje_Com_Darcy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PVH-OJ-h2T"/>
+                        <viewControllerLayoutGuide type="bottom" id="oyE-56-6CA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4wN-5m-BZw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background_splash" translatesAutoresizingMaskIntoConstraints="NO" id="FWs-gJ-lJc">
+                                <rect key="frame" x="-7" y="0.0" width="382" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vcd_Logonovo" translatesAutoresizingMaskIntoConstraints="NO" id="bFG-yE-doQ">
+                                <rect key="frame" x="142" y="75" width="91" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="Cpr-Sl-DmZ"/>
+                                    <constraint firstAttribute="width" constant="91" id="GJm-Pl-esh"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wI1-IL-D7x">
+                                <rect key="frame" x="0.0" y="511" width="378" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m58-cX-Xpw">
+                                        <rect key="frame" x="17" y="25" width="152" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Q7H-et-4GE"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="152" id="wUq-R5-ysF"/>
+                                        </constraints>
+                                        <state key="normal" title="LOGIN" backgroundImage="btn_login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="btn_login_2"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onLoginScreen:" destination="Gtr-Mm-vI6" eventType="touchUpInside" id="fxo-Mc-Egp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOV-d6-jec">
+                                        <rect key="frame" x="206" y="25" width="152" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VQZ-ma-IMi"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="152" id="X8H-RD-6Dg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="CADASTRAR">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSignUpScreen:" destination="Gtr-Mm-vI6" eventType="touchUpInside" id="4Xr-tN-an0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="m58-cX-Xpw" secondAttribute="bottom" constant="25" id="BEu-wK-ZzE"/>
+                                    <constraint firstAttribute="bottom" secondItem="zOV-d6-jec" secondAttribute="bottom" constant="25" id="JBq-3K-gkr"/>
+                                    <constraint firstItem="m58-cX-Xpw" firstAttribute="top" secondItem="wI1-IL-D7x" secondAttribute="top" constant="25" id="MWY-0w-oiW"/>
+                                    <constraint firstAttribute="height" constant="100" id="Udy-HN-3LF"/>
+                                    <constraint firstItem="zOV-d6-jec" firstAttribute="leading" relation="lessThanOrEqual" secondItem="m58-cX-Xpw" secondAttribute="trailing" constant="36" id="ZbR-VK-5Dr"/>
+                                    <constraint firstItem="m58-cX-Xpw" firstAttribute="leading" secondItem="wI1-IL-D7x" secondAttribute="leading" constant="17" id="mnn-on-EhU"/>
+                                    <constraint firstAttribute="trailing" secondItem="zOV-d6-jec" secondAttribute="trailing" constant="20" id="peY-25-K2I"/>
+                                    <constraint firstItem="zOV-d6-jec" firstAttribute="top" secondItem="wI1-IL-D7x" secondAttribute="top" constant="25" id="q9p-aE-eZq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wI1-IL-D7x" firstAttribute="top" relation="lessThanOrEqual" secondItem="bFG-yE-doQ" secondAttribute="bottom" constant="310" id="A54-7E-Hvd"/>
+                            <constraint firstItem="FWs-gJ-lJc" firstAttribute="leading" secondItem="4wN-5m-BZw" secondAttribute="leading" constant="-7" id="Dnd-Dn-e8V"/>
+                            <constraint firstAttribute="trailing" secondItem="FWs-gJ-lJc" secondAttribute="trailing" id="DqC-LF-Qg4"/>
+                            <constraint firstItem="bFG-yE-doQ" firstAttribute="top" secondItem="PVH-OJ-h2T" secondAttribute="bottom" constant="55" id="OYV-JM-VWH"/>
+                            <constraint firstItem="oyE-56-6CA" firstAttribute="top" secondItem="wI1-IL-D7x" secondAttribute="bottom" constant="56" id="TEu-ce-Yyy"/>
+                            <constraint firstItem="oyE-56-6CA" firstAttribute="top" secondItem="FWs-gJ-lJc" secondAttribute="bottom" id="WCX-xE-aU6"/>
+                            <constraint firstItem="wI1-IL-D7x" firstAttribute="leading" secondItem="4wN-5m-BZw" secondAttribute="leading" id="WOH-JI-rk7"/>
+                            <constraint firstItem="bFG-yE-doQ" firstAttribute="centerX" secondItem="4wN-5m-BZw" secondAttribute="centerX" id="WgE-lK-Uhj"/>
+                            <constraint firstItem="FWs-gJ-lJc" firstAttribute="top" secondItem="4wN-5m-BZw" secondAttribute="top" id="cfC-El-7NJ"/>
+                            <constraint firstAttribute="trailing" secondItem="wI1-IL-D7x" secondAttribute="trailing" id="kh5-6Z-1lr"/>
+                            <constraint firstAttribute="right" secondItem="wI1-IL-D7x" secondAttribute="right" id="lrR-WS-JaP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NJT-nV-eoh"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="YTp-Ob-eLy" kind="show" identifier="goToLogin" id="TEp-KX-ljz"/>
+                        <segue destination="PSJ-Po-jDs" kind="show" identifier="goToSingUp" id="cXY-U2-5YO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jj-od-vxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="153.37331334332833"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="oke-Z4-SZp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="Login" id="YTp-Ob-eLy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOh-cl-RHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279.2" y="44.977511244377816"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="VtP-nG-fu1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUp" id="PSJ-Po-jDs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTP-Ug-9FB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288" y="271.664167916042"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YQ2-jd-NdF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iea-6U-245" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T3i-LU-SSm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gtr-Mm-vI6" kind="relationship" relationship="rootViewController" id="Ofv-bm-2cI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZ4-u7-9Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447.19999999999999" y="153.37331334332833"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_login" width="158" height="58"/>
+        <image name="btn_login_2" width="252" height="46"/>
+        <image name="img_background_splash" width="378" height="667"/>
+        <image name="vcd_Logonovo" width="355" height="532"/>
+    </resources>
+</document>

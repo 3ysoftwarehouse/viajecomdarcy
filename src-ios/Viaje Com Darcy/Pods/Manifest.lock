@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.3.0)
+  - SwiftCarousel (0.8.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `master`)
+  - SwiftCarousel
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: master
+    :git: https://github.com/Alamofire/Alamofire.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: fa3c6d09b603f417c7788adb51ca0cade75b3d67
+    :git: https://github.com/Alamofire/Alamofire.git
+
+SPEC CHECKSUMS:
+  Alamofire: 1f72088aff8f6b40828dadd61be2e9a31beca01e
+  SwiftCarousel: a62f4e9b944d1bca4ccfe3f28abb6119e3e36b12
+
+PODFILE CHECKSUM: 5178aecc2a3228b20a29dd0c8661c4e78e940ef8
+
+COCOAPODS: 1.2.0
