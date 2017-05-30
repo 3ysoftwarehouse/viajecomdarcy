@@ -7,5 +7,7 @@ target 'Viaje Com Darcy' do
     
    pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'master'
    pod 'SwiftCarousel'
+   pod 'Fabric'
+   pod 'Crashlytics'
 
 end

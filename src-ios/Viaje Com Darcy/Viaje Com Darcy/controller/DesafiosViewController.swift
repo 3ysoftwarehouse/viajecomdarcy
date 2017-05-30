@@ -7,73 +7,36 @@
 //
 
 import UIKit
-import SwiftCarousel
 
-class DesafiosViewController: UIViewController, SWRevealViewControllerDelegate{
+class DesafiosViewController: UIViewController, SWRevealViewControllerDelegate, iCarouselDelegate, iCarouselDataSource{
 
     @IBOutlet weak var btMenu: UIButton!
-    @IBOutlet weak var carousel: SwiftCarousel!
     @IBOutlet weak var btAceitarDesafio: UIButton!
     
-    var items: [String]?
-    var itemsViews: [UILabel]?
+    var items:[Int] = [];
+    
+    @IBOutlet var carousel: iCarousel!;
+    
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        for i in 1 ... 3 {
+            items.append(i)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        carousel.type = .rotary
+        
         setupMenu();
-        
-        
         
         self.revealViewController().delegate = self;
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer());
         
-//        items = ["Elephants", "Tigers", "Chickens", "Owls", "Rats", "Parrots", "Snakes"]
-//        itemsViews = items!.map { labelForString($0) }
-//        carousel.items = itemsViews!
-//        carousel.resizeType = .visibleItemsPerPage(3)
-//        carousel.defaultSelectedIndex = 3
-//        carousel.delegate = self
-//        carousel.scrollType = .default
-        
-        
-        
-        
-        
-//        let carouselFrame = CGRect(x: view.center.x - 200.0, y: view.center.y - 100.0, width: 400.0, height: 200.0)
-//        carouselView = SwiftCarousel(frame: carouselFrame)
-        try! carousel.itemsFactory(itemsCount: 5) { choice in
-            let imageView = UIImageView(image: UIImage(named: "puppy\(choice+1)"))
-            imageView.frame = CGRect(origin: .zero, size: CGSize(width: 200.0, height: 200.0))
-            
-            return imageView
-        }
-        carousel.resizeType = .withoutResizing(10.0)
-        carousel.delegate = self
-        carousel.defaultSelectedIndex = 2
-        view.addSubview(carousel)
-
-
-        
-       
-
-        // Do any additional setup after loading the view.
     }
     
-    func labelForString(_ string: String) -> UILabel {
-        let text = UILabel()
-        text.text = string
-        text.textColor = .black
-        text.textAlignment = .center
-        text.font = .systemFont(ofSize: 24.0)
-        text.numberOfLines = 0
-        
-        return text
-    }
-    
-    @IBAction func selectTigers(_ sender: AnyObject) {
-        carousel.selectItem(1, animated: true)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -93,20 +56,56 @@ class DesafiosViewController: UIViewController, SWRevealViewControllerDelegate{
     func closeMenu(){
         self.revealViewController().revealToggle(animated: true);
     }
-
-}
-
-extension DesafiosViewController: SwiftCarouselDelegate {
-    private func didSelectItem(item: UIView, index: Int) -> UIView? {
-        
-        btAceitarDesafio.setTitle("Aceitar \(index+1)", for: .normal)
-        
-        return nil
+    
+    func numberOfItems(in carousel: iCarousel) -> Int {
+        return items.count;
     }
     
-    func willBeginDragging(withOffset offset: CGPoint) {
-        btAceitarDesafio.setTitle("Aceitar", for: .normal)
+    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
+        /*var label: UILabel
+        var itemView: UIImageView
+        
+        //reuse view if available, otherwise create a new view
+        if let view = view as? UIImageView {
+            itemView = view
+            //get a reference to the label in the recycled view
+            label = itemView.viewWithTag(1) as! UILabel
+        } else {
+            //don't do anything specific to the index within
+            //this `if ... else` statement because the view will be
+            //recycled and used with other index values later
+            itemView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+            itemView.image = UIImage(named: "puppy1.jpg")
+            itemView.contentMode = .center
+            
+            label = UILabel(frame: itemView.bounds)
+            label.backgroundColor = UIColor.clear
+            label.textAlignment = .center
+            label.font = label.font.withSize(50)
+            label.tag = 1
+            itemView.addSubview(label)
+        }
+        
+        //set item label
+        //remember to always set any properties of your carousel item
+        //views outside of the `if (view == nil) {...}` check otherwise
+        //you'll get weird issues with carousel item content appearing
+        //in the wrong place in the carousel
+        label.text = "\(items[index])"
+        
+        return itemView*/
+        let view  = CardView.loadFromNib();
+        view.setImagem(i: index)
+        return view;
     }
+    
+    func carousel(carousel: iCarousel, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
+        if (option == .spacing) {
+            return value * 1.1
+        }
+        return value
+    }
+
 }
 
 

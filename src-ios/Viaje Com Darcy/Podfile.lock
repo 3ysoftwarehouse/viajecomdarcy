@@ -1,9 +1,14 @@
 PODS:
   - Alamofire (4.3.0)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
   - SwiftCarousel (0.8.0)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `master`)
+  - Crashlytics
+  - Fabric
   - SwiftCarousel
 
 EXTERNAL SOURCES:
@@ -18,8 +23,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 1f72088aff8f6b40828dadd61be2e9a31beca01e
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   SwiftCarousel: a62f4e9b944d1bca4ccfe3f28abb6119e3e36b12
 
-PODFILE CHECKSUM: 5178aecc2a3228b20a29dd0c8661c4e78e940ef8
+PODFILE CHECKSUM: 50b05d2e09c5048c00630c2ebaca0a68e38af167
 
 COCOAPODS: 1.2.0
